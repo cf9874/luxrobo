@@ -1,0 +1,27 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.modalTitle {
+  margin-top: 0;
+}
+
+.projetAlarm_wrapper {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  padding: 10px;
+  background-color: $gray_1;
+  overflow-y: scroll;
+  border-radius: 10px;
+
+  .projectAlarm {
+    text-align: start;
+    padding-block: $gapPixel;
+    padding-inline-start: 2 * $gapPixel;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $white_1;
+      color: $lightBlue_5;
+    }
+  }
+}

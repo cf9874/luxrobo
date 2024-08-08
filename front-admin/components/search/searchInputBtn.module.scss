@@ -1,0 +1,16 @@
+.containter {
+  flex-grow: 1;
+}
+
+.containter > div {
+  width: 100%;
+  height: 100%;
+}
+
+.searchBtn {
+  background-color: #888888;
+  color: white;
+  font-weight: bold;
+  height: 100% !important;
+  padding: 0 18px;
+}

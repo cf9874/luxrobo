@@ -1,0 +1,74 @@
+//---------------------------------------------------------------------------
+//[Select]
+// 전체 영역
+.select_global {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  //
+}
+
+// select 내용
+.select_global > div {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  padding: 0 11px !important;
+  margin: 0 !important;
+  //
+  color: $black_1 !important;
+  font-size: 14px !important;
+  text-align: center;
+  //
+  background-color: white !important;
+  box-sizing: border-box !important;
+  border: 1px solid $gray_1 !important;
+  border-radius: 6px !important;
+
+  &:focus-within {
+    border-color: $lightBlue_1 !important;
+  }
+
+  &:hover {
+    border-color: $lightBlue_1 !important;
+  }
+}
+
+//---------------------------------------------------------------------------
+//[SelectItem]
+// dropdown - firstchild - firstchild
+// .select_dropdown_global {
+//   //background-color: green !important;
+// }
+
+// dropdown list
+// .select_dropdown_global > div:nth-child(2) > div > div > div {
+//   //background-color: aqua;
+// }
+
+// SelectItem
+.select_dropdown_global > div:nth-child(2) > div > div > div > div {
+  display: block;
+  width: auto;
+  min-height: 32px;
+  position: relative;
+  padding: 5px 12px;
+  margin: 0;
+  //
+  color: $black_1;
+  font-size: 14px;
+  font-weight: 400;
+  //
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+}
+.select_dropdown_global > div:nth-child(2) > div > div > div > div[aria-selected="true"] {
+  color: white;
+  font-weight: 600;
+  background-color: $lightBlue_1;
+}

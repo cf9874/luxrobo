@@ -1,0 +1,53 @@
+@import "../../styles/scss/globals/globals.scss";
+
+//--------------------------------------------------------------
+.openBtn {
+  float: left;
+}
+//--------------------------------------------------------------
+.modalTitle {
+  margin-top: 0;
+}
+//--------------------------------------------------------------
+.adminModal_inputName_wrapper {
+  margin-bottom: 20px;
+  // .adminModal_inputName {
+  // }
+}
+
+.adminModal_checkGroup {
+  margin-bottom: 30px;
+
+  .adminModal_checkGroup_item {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .button_cancel {
+    height: 100%;
+    padding: 6px 30px !important;
+    margin-right: 10px !important;
+    border-radius: 40px !important;
+  }
+
+  .button_save {
+    height: 100%;
+    padding: 6px 30px !important;
+    color: white !important;
+    background-color: $lightBlue_1 !important;
+    border-radius: 40px !important;
+
+    &:hover {
+      color: $lightBlue_1 !important;
+      background-color: white !important;
+    }
+  }
+}

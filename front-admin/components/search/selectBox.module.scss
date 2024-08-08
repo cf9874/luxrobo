@@ -1,0 +1,32 @@
+@import "../../styles/scss/variable/variable.scss";
+$categoryMaxText: 3;
+$includeMaxText: 2;
+
+.button {
+  margin-right: 10px;
+}
+
+.category {
+  min-width: nth($minBtnWidth, $categoryMaxText);
+}
+
+.include {
+  min-width: nth($minBtnWidth, $includeMaxText);
+}
+
+//
+.button > div {
+  //background-color: aqua !important;
+  width: 100%;
+  height: 100% !important; // 제거시 32px 고정
+}
+
+.button > div > span:nth-child(2) > div {
+  // button text
+  display: inline-block; // 제거시 아래 높이 2배
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 3px 0;
+}

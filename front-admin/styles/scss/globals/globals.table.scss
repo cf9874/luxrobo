@@ -1,0 +1,653 @@
+//---------------------------------------------------------------------------
+// [Table]
+// class = "ant-table"
+// .table_global > div > div > div {
+// }
+
+// [table]
+.table_global > div > div > div > div > div > table {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  //
+  box-sizing: border-box;
+  border: gray;
+  border-radius: 8px 8px 0 0;
+}
+
+// [table > thead]
+.table_global > div > div > div > div > div > table > thead {
+  display: table-header-group;
+  vertical-align: middle;
+  margin: 0;
+  //
+  //background: white;
+  border-color: inherit;
+
+  // [table > thead > tr ]
+  & > tr {
+    display: table-row;
+    vertical-align: inherit;
+    margin: 0;
+    //
+    border-color: inherit;
+  }
+
+  // thead 시작 부분 round 설정
+  & > tr:first-child > *:first-child {
+    border-start-start-radius: 8px !important;
+  }
+  // thead 끝 부분 round 설정
+  & > tr:first-child > *:last-child {
+    border-start-end-radius: 8px !important;
+  }
+
+  // [ table > thead > tr > th]
+  & > tr > th {
+    display: table-cell;
+    position: relative;
+    vertical-align: inherit;
+    padding: 16px 16px !important;
+    //
+    background: #fafafa !important;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    //cursor: pointer !important;
+
+    &:has(span[class~="ant-table-column-sorter"]) {
+      cursor: pointer;
+    }
+
+    &:hover {
+      & > div > span[class~="ant-table-column-sorter"] {
+        & > span > span {
+          color: $black_1 !important;
+        }
+      }
+    }
+  }
+
+  & > tr > th:has(div[class="ant-table-selection"]) {
+    padding-inline: 8px !important;
+    text-align: center;
+    cursor: default !important;
+  }
+
+  // table cell 사이 실선
+  &
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    width: 1px !important;
+    height: 1.6em !important;
+    //
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    inset-inline-end: 0 !important;
+    //
+    background: #f0f0f0 !important;
+  }
+
+  // [table > thead > tr > th > div]
+  & > tr > th > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    //
+    box-sizing: border-box !important;
+  }
+
+  & > tr > th > div[class="ant-table-selection"] {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+
+    &:hover {
+      & > label > span:not([class~="ant-checkbox-checked"]) > span {
+        border-color: $lightBlue_1 !important;
+      }
+      & > label > span[class~="ant-checkbox-checked"] > span {
+        background-color: $lightBlue_1 !important;
+      }
+    }
+  }
+
+  // [rowSelect]
+  & > tr > th > div > label {
+    display: inline-flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    //
+    box-sizing: border-box;
+    cursor: pointer;
+
+    & > span {
+      position: relative;
+      align-self: center;
+      padding: 0;
+      margin: 0;
+      //
+      color: $black_1;
+      font-size: 14px;
+      //
+      //cursor: pointer;
+    }
+
+    // [row-selection : checkbox]
+    & > span:not([class~="ant-checkbox-checked"]) > span {
+      display: block !important;
+      position: relative !important;
+      top: 0 !important;
+      inset-inline-start: 0 !important;
+      width: 16px !important;
+      height: 16px !important;
+      //
+      background-color: white !important;
+      box-sizing: border-box !important;
+      border: 1px solid #d9d9d9 !important;
+      border-radius: 4px !important;
+
+      &::after {
+        background-color: $lightBlue_1;
+      }
+    }
+
+    // checked 상태
+    & > span[class~="ant-checkbox-checked"] > span[class="ant-checkbox-inner"] {
+      background-color: $lightBlue_1;
+      border-color: $lightBlue_1;
+    }
+  }
+
+  // [title]
+  & > tr > th > div > span[class="ant-table-column-title"] {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    //
+    font-size: 14px;
+    color: $black_1;
+    font-weight: 600;
+    text-align: start;
+    overflow-wrap: break-word;
+    //
+    box-sizing: border-box;
+  }
+
+  // [sorter]
+  & > tr > th > div > span[class~="ant-table-column-sorter"] {
+    margin-inline-start: 4px;
+    //
+    box-sizing: border-box;
+
+    & > span {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > span {
+        display: inline-flex;
+        align-items: center;
+        //
+        // sorter 화살표 색상
+        color: rgba(0, 0, 0, 0.29);
+        // sorter 화살표 크기
+        font-size: 12px;
+        text-align: center;
+
+        &[class~="active"] {
+          color: $lightBlue_1 !important;
+        }
+      }
+    }
+  }
+}
+
+// [table > tbody]
+.table_global > div > div > div > div > div > table > tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  margin: 0;
+  //
+  background: white;
+  border-color: inherit;
+
+  // [table > tbody > tr ]
+  & > tr {
+    display: table-row;
+    vertical-align: inherit;
+    margin: 0;
+    //
+    border-color: inherit;
+
+    & > td[class~="ant-table-cell-row-hover"] {
+      background: $lightBlue_2 !important;
+    }
+
+    &[class~="ant-table-row-selected"] > td {
+      background: $lightBlue_3 !important;
+    }
+    &[class~="ant-table-row-selected"] > td[class~="ant-table-cell-row-hover"] {
+      background: $lightBlue_4 !important;
+    }
+  }
+
+  // [ table > tbody > tr > td]
+  & > tr > td {
+    display: table-cell;
+    position: relative !important;
+    vertical-align: inherit;
+    padding: 16px 16px !important;
+    //
+    color: $black_1;
+    font-size: 14px;
+    text-align: start;
+    overflow-wrap: break-word !important;
+    //
+    background: white !important;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    // cursor: pointer !important;
+  }
+
+  & > tr > td[class~="ant-table-selection-column"] {
+    padding-inline: 8px !important;
+    text-align: center;
+    //cursor: default !important;
+  }
+
+  // [rowSelect]
+  & > tr > td[class~="ant-table-selection-column"] > label {
+    display: inline-flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    //
+    text-align: center;
+    //
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:not(:has(span[class~="ant-checkbox-disabled"])):hover {
+      & > span:not([class~="ant-checkbox-checked"]) > span {
+        border-color: $lightBlue_1 !important;
+      }
+      & > span[class~="ant-checkbox-checked"] > span {
+        background-color: $lightBlue_5 !important;
+      }
+    }
+
+    &:has(span[class~="ant-checkbox-disabled"]) {
+      cursor: not-allowed;
+    }
+
+    & > span {
+      position: relative;
+      align-self: center;
+      padding: 0;
+      margin: 0;
+      //
+      color: $black_1;
+      font-size: 14px;
+      //
+      //cursor: pointer;
+    }
+
+    // [row-selection : checkbox]
+    & > span:not([class~="ant-checkbox-checked"]) > span {
+      display: block !important;
+      position: relative !important;
+      top: 0 !important;
+      inset-inline-start: 0 !important;
+      width: 16px !important;
+      height: 16px !important;
+      //
+      background-color: white !important;
+      box-sizing: border-box !important;
+      border: 1px solid #d9d9d9 !important;
+      border-radius: 4px !important;
+    }
+
+    // disabled
+    & > span[class~="ant-checkbox-disabled"] > span {
+      background-color: lightgray !important;
+    }
+
+    // checked 상태
+    & > span[class~="ant-checkbox-checked"] > span[class="ant-checkbox-inner"] {
+      background-color: $lightBlue_1;
+      border-color: $lightBlue_1;
+    }
+  }
+}
+
+//---------------------------------------------------------------------------
+// [Table - Index]
+//class = "ant-table"
+// .index_table > div > div > div {
+// }
+
+// [table]
+.index_table > div > div > div > div > div > table {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin-top: 10px;
+  //
+  box-sizing: border-box;
+  border: gray;
+  border-radius: 8px 8px 0 0;
+}
+
+// [table > thead]
+.index_table > div > div > div > div > div > table > thead {
+  display: table-header-group;
+  vertical-align: middle;
+  margin: 0;
+  //
+  //background: white;
+  border-color: inherit;
+
+  // [table > thead > tr ]
+  & > tr {
+    display: table-row;
+    vertical-align: inherit;
+    margin: 0;
+    //
+    border-color: inherit;
+  }
+
+  // thead 시작 부분 round 설정
+  & > tr:first-child > *:first-child {
+    border-start-start-radius: 0 !important;
+  }
+  // thead 끝 부분 round 설정
+  & > tr:first-child > *:last-child {
+    border-start-end-radius: 0 !important;
+  }
+
+  // [ table > thead > tr > th]
+  & > tr > th {
+    display: table-cell;
+    position: relative;
+    vertical-align: inherit;
+    padding: $gapPixel $gapPixel !important;
+    //
+    background: #888888 !important;
+    background-clip: content-box !important;
+    box-sizing: border-box !important;
+    border-bottom: none !important;
+    //cursor: pointer !important;
+
+    &:has(span[class~="ant-table-column-sorter"]) {
+      cursor: pointer;
+    }
+
+    &:hover {
+      & > div > span[class~="ant-table-column-sorter"] {
+        & > span > span {
+          color: $black_1 !important;
+        }
+      }
+    }
+  }
+
+  & > tr > th:has(div[class="ant-table-selection"]) {
+    //padding-inline: $gapPixel !important;
+    text-align: center;
+    cursor: default !important;
+  }
+
+  // table cell 사이 실선
+  &
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none;
+  }
+
+  // [table > thead > tr > th > div]
+  & > tr > th > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: calc(16px - $gapPixel) calc(16px - $gapPixel) !important;
+    //
+    box-sizing: border-box !important;
+  }
+
+  & > tr > th > div[class="ant-table-selection"] {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    //padding-inline: 8px - $gapPixel !important;
+    padding-inline: 10px - $gapPixel !important;
+
+    &:hover {
+      & > label > span:not([class~="ant-checkbox-checked"]) > span {
+        border-color: $lightBlue_1 !important;
+      }
+      & > label > span[class~="ant-checkbox-checked"] > span {
+        background-color: $lightBlue_1 !important;
+      }
+    }
+  }
+
+  // [rowSelect]
+  & > tr > th > div > label {
+    display: inline-flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    //
+    box-sizing: border-box;
+    cursor: pointer;
+
+    & > span {
+      position: relative;
+      align-self: center;
+      padding: 0;
+      margin: 0;
+      //
+      color: $black_1;
+      font-size: 14px;
+    }
+
+    // [row-selection : checkbox]
+    & > span:not([class~="ant-checkbox-checked"]) > span {
+      display: block !important;
+      position: relative !important;
+      top: 0 !important;
+      inset-inline-start: 0 !important;
+      width: 16px !important;
+      height: 16px !important;
+      //
+      background-color: white !important;
+      box-sizing: border-box !important;
+      border: 1px solid #d9d9d9 !important;
+      border-radius: 4px !important;
+
+      &::after {
+        background-color: $lightBlue_1;
+      }
+    }
+
+    // checked 상태
+    & > span[class~="ant-checkbox-checked"] > span[class="ant-checkbox-inner"] {
+      background-color: $lightBlue_1;
+      border-color: $lightBlue_1;
+    }
+  }
+
+  // [title]
+  & > tr > th > div > span[class="ant-table-column-title"] {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    //
+    font-size: 14px;
+    color: $black_1;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: break-word;
+    //
+    box-sizing: border-box;
+  }
+
+  // [sorter]
+  & > tr > th > div > span[class~="ant-table-column-sorter"] {
+    margin-inline-start: 4px;
+    //
+    box-sizing: border-box;
+
+    & > span {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > span {
+        display: inline-flex;
+        align-items: center;
+        //
+        // sorter 화살표 색상
+        color: rgba(0, 0, 0, 0.29);
+        // sorter 화살표 크기
+        font-size: 12px;
+        text-align: center;
+
+        &[class~="active"] {
+          color: $lightBlue_1 !important;
+        }
+      }
+    }
+  }
+}
+
+// [table > tbody]
+.index_table > div > div > div > div > div > table > tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  margin: 0;
+  //
+  //background: white;
+  border-color: inherit;
+
+  // [table > tbocy > tr ]
+  & > tr {
+    display: table-row;
+    vertical-align: inherit;
+    margin: 0;
+    //
+    border-color: inherit;
+
+    &:nth-child(2n) > td {
+      background-color: #dadada !important;
+    }
+
+    &[class~="ant-table-row-selected"] > td {
+      background-color: $lightBlue_2 !important;
+    }
+
+    &:nth-child(2n)[class~="ant-table-row-selected"] > td {
+      background-color: $lightBlue_6 !important;
+    }
+  }
+
+  // [ table > tbody > tr > td]
+  & > tr > td {
+    display: table-cell;
+    position: relative !important;
+    vertical-align: inherit;
+    padding: $gapPixel $gapPixel !important;
+    //
+    color: $black_1;
+    font-size: 14px;
+    text-align: start;
+    overflow-wrap: break-word !important;
+    //
+    background: #eeeeee !important;
+    background-clip: content-box !important;
+    box-sizing: border-box !important;
+    border-bottom: none !important;
+    // cursor: pointer !important;
+
+    & > div {
+      padding: calc(16px - $gapPixel) calc(16px - $gapPixel);
+    }
+  }
+
+  // & > tr:nth-child(2n) > td {
+  //   background-color: #dadada !important;
+  // }
+
+  & > tr > td[class~="ant-table-selection-column"] {
+    //padding-inline: $gapPixel !important;
+    text-align: center;
+    //cursor: default !important;
+  }
+
+  // [rowSelect]
+  & > tr > td[class~="ant-table-selection-column"] > label {
+    display: inline-flex;
+    align-items: baseline;
+    margin: calc(16px - $gapPixel) calc(10px - $gapPixel) !important;
+    padding: 0;
+    //
+    text-align: center;
+    //
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:not(:has(span[class~="ant-checkbox-disabled"])):hover {
+      & > span:not([class~="ant-checkbox-checked"]) > span {
+        border-color: $lightBlue_1 !important;
+      }
+      & > span[class~="ant-checkbox-checked"] > span {
+        background-color: $lightBlue_5 !important;
+      }
+    }
+
+    &:has(span[class~="ant-checkbox-disabled"]) {
+      cursor: not-allowed;
+    }
+
+    & > span {
+      position: relative;
+      align-self: center;
+      padding: 0;
+      margin: 0;
+      //
+      color: $black_1;
+      font-size: 14px;
+      //
+      //cursor: pointer;
+    }
+
+    // [row-selection : checkbox]
+    & > span:not([class~="ant-checkbox-checked"]) > span {
+      display: block !important;
+      position: relative !important;
+      top: 0 !important;
+      inset-inline-start: 0 !important;
+      width: 16px !important;
+      height: 16px !important;
+      //
+      background-color: white !important;
+      box-sizing: border-box !important;
+      border: 1px solid #d9d9d9 !important;
+      border-radius: 4px !important;
+    }
+
+    // disabled
+    & > span[class~="ant-checkbox-disabled"] > span {
+      background-color: lightgray !important;
+    }
+
+    // checked 상태
+    & > span[class~="ant-checkbox-checked"] > span[class="ant-checkbox-inner"] {
+      background-color: $lightBlue_1;
+      border-color: $lightBlue_1;
+    }
+  }
+}

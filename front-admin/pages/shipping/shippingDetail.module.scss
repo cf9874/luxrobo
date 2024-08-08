@@ -1,0 +1,36 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.desc_move_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .desc_move_button_full {
+    width: 100%;
+  }
+}
+
+.shipping_desc_file_btn {
+  width: 100%;
+}
+
+.shipping_descC_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  .shipping_descC_title_orderStep {
+    width: 50%;
+  }
+}
+
+.shipping_descC_descriptions {
+  margin-bottom: 20px;
+}
+
+.shipping_parcel_input {
+  text-align: center;
+  margin-block: 2px !important;
+}

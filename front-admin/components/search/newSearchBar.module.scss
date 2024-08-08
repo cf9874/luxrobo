@@ -1,0 +1,23 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.searchBarContainer {
+  width: 100%;
+}
+
+.searchButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchButtonContainer > button {
+  margin-right: 10px;
+}
+
+.reloadBtn {
+  font-size: 20px;
+
+  &:hover {
+    color: $lightBlue_1;
+  }
+}

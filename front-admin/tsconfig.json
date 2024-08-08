@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    //"moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "baseUrl": "./"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Table/table.object.tsx", "**/*.ts"],
+  "exclude": ["node_modules"]
+}

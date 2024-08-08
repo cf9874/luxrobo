@@ -1,0 +1,55 @@
+{
+  "project": [
+    {
+      "projectID": 1,
+      "owner": "string",
+      "teamID": 0,
+      "userID": 1,
+      "project_image": "",
+      "title": "Modi Project1",
+      "created_at": "23.05.14 16:42",
+      "updated_at": "23.05.14 16:42"
+    },
+    {
+      "projectID": 2,
+      "owner": "string",
+      "teamID": 0,
+      "userID": 2,
+      "project_image": "",
+      "title": "Modi Project2",
+      "created_at": "23.07.06 12:34",
+      "updated_at": "23.07.06 12:34"
+    },
+    {
+      "projectID": 3,
+      "owner": "string",
+      "teamID": 1,
+      "userID": 0,
+      "project_image": "",
+      "title": "My IoT 2",
+      "created_at": "23.08.25 19:25",
+      "updated_at": "23.08.25 19:25"
+    }
+  ],
+  "project_info": {
+    "created_at": "string",
+    "owner": "string",
+    "projectID": 0,
+    "project_image": "string",
+    "teamID": 0,
+    "title": "string",
+    "updated_at": "string",
+    "userID": 0
+  },
+  "project_parts": [],
+  "project_files": [{ "projectFile": "", "schematicsFile": "", "PCBBoardFile": "" }],
+  "project_workspace": [
+    {
+      "workspace": "user",
+      "workspace_id": 1,
+      "workspace_name": "홍길동",
+      "workspace_email": "hong1@luxrobo.com",
+      "workspace_phone": "010-5213-2135"
+    }
+  ]
+}

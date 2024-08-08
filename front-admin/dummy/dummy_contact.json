@@ -1,0 +1,53 @@
+{
+  "contacts": [
+    {
+      "contactID": 1,
+      "title": "배송 지연 문의",
+      "userID": 1,
+      "writer": "홍길동",
+      "phone_number": "",
+      "tag": 3,
+      "content": "question 01 12356 aaaaa",
+      "created_at": "23.08.01 19:25",
+      "updated_at": "23.08.01 19:25",
+      "reply": "12345687\n"
+    },
+    {
+      "contactID": 2,
+      "title": "프로젝트 양산 문의",
+      "userID": 1,
+      "writer": "홍길동",
+      "phone_number": "",
+      "tag": 1,
+      "content": "",
+      "created_at": "23.08.01 19:25",
+      "updated_at": "23.08.01 19:25",
+      "reply": ""
+    },
+    {
+      "contactID": 3,
+      "title": "회로도 파일 다운로드 불가",
+      "userID": 1,
+      "writer": "홍길동",
+      "phone_number": "",
+      "tag": 2,
+      "content": "123456",
+      "created_at": "23.08.06 12:34",
+      "updated_at": "23.08.06 12:34",
+      "reply": ""
+    }
+  ],
+
+  "contact_info": {
+    "contactID": 1,
+    "title": "배송 지연 문의",
+    "userID": 1,
+    "writer": "홍길동",
+    "phone_number": "",
+    "tag": 3,
+    "content": "question 01 12356 aaaaa",
+    "created_at": "23.08.01 19:25",
+    "updated_at": "23.08.01 19:25",
+    "reply": "12345687\n"
+  }
+}

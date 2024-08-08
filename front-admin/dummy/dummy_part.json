@@ -1,0 +1,233 @@
+{
+  "part": [
+    {
+      "id": 1,
+      "name": "ESP32-C3FH4",
+      "version": "V1.1",
+      "stock": 4732,
+      "explanation": [
+        "IMU - 관성 측정 장비",
+        "Compact, low-power Inertial Measurement Unit ideal for wearables, hearables, and mobile devices"
+      ],
+      "quantity_prices": {
+        "1": "$4.80",
+        "10": "$3.08",
+        "100": "$2.95",
+        "500+": "$2.82"
+      },
+      "dataSheet": "",
+      "thumbNail": "",
+      "category": "MCU",
+      "kind": "MCU",
+      "toolDetail": {
+        "Type": "SMD",
+        "Axis": "6-Axis",
+        "Resolution": "16bit",
+        "Interface": "I2C, I3C, SPI",
+        "MountingStyle": "SMD",
+        "RatingVoltage": "5V"
+      },
+      "rawData": {
+        "Manufacturer": "Bosch",
+        "Product Category": "IMUs - Inertial Measurement Units",
+        "Mounting Style": "SMD/SMT",
+        "Package / Case": "LGA",
+        "Sensor Type": "6-axis",
+        "Interface Type": "I2C, I3C, SPI",
+        "Resolution": "16 bit",
+        "Minimum Operating Temperature": "- 40 C",
+        "Maximum Operating Temperature": "+ 85 C"
+      },
+      "price": "$1.43",
+      "canMake": "생성 가능"
+    },
+    {
+      "id": 2,
+      "name": "HV-5RGB60",
+      "version": "V3.4",
+      "stock": 90242,
+      "explanation": [
+        "IMU - 관성 측정 장비",
+        "Compact, low-power Inertial Measurement Unit ideal for wearables, hearables, and mobile devices"
+      ],
+      "quantity_prices": {
+        "1": "$4.80",
+        "10": "$3.08",
+        "100": "$2.95",
+        "500+": "$2.82"
+      },
+      "dataSheet": "",
+      "thumbNail": "",
+      "category": "Output",
+      "kind": "LED",
+      "toolDetail": {
+        "Type": "SMD",
+        "Axis": "6-Axis",
+        "Resolution": "16bit",
+        "Interface": "I2C, I3C, SPI",
+        "MountingStyle": "SMD",
+        "RatingVoltage": "3.3V"
+      },
+      "rawData": {
+        "Manufacturer": "Bosch",
+        "Product Category": "IMUs - Inertial Measurement Units",
+        "Mounting Style": "SMD/SMT",
+        "Package / Case": "LGA",
+        "Sensor Type": "6-axis",
+        "Interface Type": "I2C, I3C, SPI",
+        "Resolution": "16 bit",
+        "Minimum Operating Temperature": "- 40 C",
+        "Maximum Operating Temperature": "+ 85 C"
+      },
+      "price": "$1.01",
+      "canMake": "생성 가능"
+    },
+    {
+      "id": 3,
+      "name": "LG77LICMD",
+      "version": "V3.4",
+      "stock": 230,
+      "explanation": [
+        "IMU - 관성 측정 장비",
+        "Compact, low-power Inertial Measurement Unit ideal for wearables, hearables, and mobile devices"
+      ],
+      "quantity_prices": {
+        "1": "$4.80",
+        "10": "$3.08",
+        "100": "$2.95",
+        "500+": "$2.82"
+      },
+      "dataSheet": "",
+      "thumbNail": "",
+      "category": "Input",
+      "kind": "GPS",
+      "toolDetail": {
+        "Type": "SMD",
+        "Axis": "6-Axis",
+        "Resolution": "16bit",
+        "Interface": "I2C, I3C, SPI",
+        "MountingStyle": "SMD",
+        "RatingVoltage": "3.3V"
+      },
+      "rawData": {
+        "Manufacturer": "Bosch",
+        "Product Category": "IMUs - Inertial Measurement Units",
+        "Mounting Style": "SMD/SMT",
+        "Package / Case": "LGA",
+        "Sensor Type": "6-axis",
+        "Interface Type": "I2C, I3C, SPI",
+        "Resolution": "16 bit",
+        "Minimum Operating Temperature": "- 40 C",
+        "Maximum Operating Temperature": "+ 85 C"
+      },
+      "price": "$10.58",
+      "canMake": "생성 가능"
+    },
+    {
+      "id": 4,
+      "name": "BMI323",
+      "version": "V2.0",
+      "stock": 16500,
+      "explanation": [
+        "IMU - 관성 측정 장비",
+        "Compact, low-power Inertial Measurement Unit ideal for wearables, hearables, and mobile devices"
+      ],
+      "quantity_prices": {
+        "1": "$4.80",
+        "10": "$3.08",
+        "100": "$2.95",
+        "500+": "$2.82"
+      },
+      "dataSheet": "",
+      "thumbNail": "",
+      "category": "Input",
+      "kind": "IMU",
+      "toolDetail": {
+        "Type": "SMD",
+        "Axis": "6-Axis",
+        "Resolution": "16bit",
+        "Interface": "I2C, I3C, SPI",
+        "MountingStyle": "SMD",
+        "RatingVoltage": "3.3V"
+      },
+      "rawData": {
+        "Manufacturer": "Bosch",
+        "Product Category": "IMUs - Inertial Measurement Units",
+        "Mounting Style": "SMD/SMT",
+        "Package / Case": "LGA",
+        "Sensor Type": "6-axis",
+        "Interface Type": "I2C, I3C, SPI",
+        "Resolution": "16 bit",
+        "Minimum Operating Temperature": "- 40 C",
+        "Maximum Operating Temperature": "+ 85 C"
+      },
+      "price": "$4.80",
+      "canMake": "생성 가능"
+    }
+  ],
+  "part_info": {},
+  "part_Files": [
+    {
+      "schematicsFile": "",
+      "PCBBoardFile": ""
+    }
+  ],
+  "part_BOMSchema": [
+    {
+      "No.": 1,
+      "Name": "BMI323",
+      "Prefix": "Footprint",
+      "Footprint": "LGA-14",
+      "Quantity": 1
+    },
+    {
+      "No.": 2,
+      "Name": "0.1uF",
+      "Prefix": "C1, C2",
+      "Footprint": "C0402",
+      "Quantity": 2
+    }
+  ],
+  "part_IOPorts": [
+    {
+      "No.": 1,
+      "PortName": "VDD-IMU-IN",
+      "IOType": "VDD",
+      "PinType": "IN",
+      "VoltRangeMin": 2.7,
+      "VoltRangeMax": 7
+    },
+    {
+      "No.": 2,
+      "PortName": "GND",
+      "IOType": "GND",
+      "PinType": "---",
+      "VoltRangeMin": "---",
+      "VoltRangeMax": "---"
+    },
+    {
+      "No.": 3,
+      "PortName": "I2C-IMU_SDA",
+      "IOType": "I2C",
+      "PinType": "SDA",
+      "VoltRangeMin": 1.8,
+      "VoltRangeMax": 3.5
+    },
+    {
+      "No.": 4,
+      "PortName": "I2C-IMU_SDK",
+      "IOType": "I2C",
+      "PinType": "SDK",
+      "VoltRangeMin": 1.8,
+      "VoltRangeMax": 3.5
+    },
+    {
+      "No.": 5,
+      "PortName": "GPIO-IMU_INT",
+      "IOType": "GPIO",
+      "PinType": "INT",
+      "VoltRangeMin": 1.8,
+      "VoltRangeMax": 3.5
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.desc_move_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .desc_move_button_full {
+    width: 100%;
+  }
+}
+
+.descB_amount_input_wrapper {
+  .descB_amount_input {
+    width: 50%;
+    margin-right: 10px;
+  }
+}

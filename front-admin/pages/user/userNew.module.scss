@@ -1,0 +1,36 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.descA_phone_input_wrapper{
+  display: flex;
+  margin-bottom: 10px;
+
+  .descA_phone_countrycode{
+    width: 30%;
+  }
+
+  // .descA_phone_phoneNum{  }
+}
+
+.descA_email_input {
+  margin-bottom: 10px;
+}
+
+.descA_image_wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  .descA_image_image {
+    max-height: 50px;
+  }
+
+  .descA_image_button {
+    margin-left: 10px;
+  }
+}
+
+.new_user_descB_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}

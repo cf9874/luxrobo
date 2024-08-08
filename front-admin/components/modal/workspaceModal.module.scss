@@ -1,0 +1,42 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.modalOpenText {
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: $lightBlue_1;
+  }
+}
+
+.workspace_searchBar {
+  margin-block: 30px;
+}
+
+.tablePagination {
+  display: none !important;
+}
+
+.workspace_tableWrapper {
+  width: 100%;
+  // defaultPaginationSize : 5 일때
+  min-height: 334px;
+}
+
+.workspace_pagination {
+  width: 100%;
+  text-align: center;
+  margin-block: 10px 20px;
+}
+
+.workspace_footer {
+  width: 100%;
+  text-align: center;
+
+  .workspace_footer_button {
+    height: 100%;
+    padding: 6px 30px !important;
+    margin-right: 10px !important;
+    border-radius: 40px !important;
+  }
+}

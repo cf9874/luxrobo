@@ -1,0 +1,173 @@
+{
+  "customblock": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "RGBLED123",
+      "create_dt": "23.04.29 10:23",
+      "update_dt": "23.05.14 16:42",
+      "workspace": {
+        "space": "user",
+        "id": 1
+      },
+      "explain": "DescriptionDescriptionDescriptionDescription123",
+      "blockSpec": {
+        "Icon Image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/icons/led.png",
+        "Color": "Orange+",
+        "Category": "Output",
+        "Type": "LED",
+        "Termination": "SMD",
+        "Forward Current": "10mA",
+        "LEDColor": "RGB"
+      }
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "FullAdder",
+      "create_dt": "23.04.29 10:23",
+      "update_dt": "23.07.06 12:34",
+      "workspace": {
+        "space": "team",
+        "id": 1
+      },
+      "explain": "DescriptionDescriptionDescriptionDescription",
+      "blockSpec": {
+        "Icon Image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/icons/led.png",
+        "Color": "Orange",
+        "Category": "Output",
+        "Type": "LED",
+        "Termination": "SMD",
+        "Forward Current": "10mA",
+        "LEDColor": "RGB"
+      }
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "TouchPads12",
+      "create_dt": "23.04.29 10:23",
+      "update_dt": "23.08.25 19:25",
+      "workspace": {
+        "space": "user",
+        "id": 2
+      },
+      "explain": "DescriptionDescriptionDescriptionDescription",
+      "blockSpec": {
+        "Icon Image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/icons/led.png",
+        "Color": "Orange",
+        "Category": "Output",
+        "Type": "LED",
+        "Termination": "SMD",
+        "Forward Current": "10mA",
+        "LEDColor": "RGB"
+      }
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "name": "TouchPads",
+      "create_dt": "23.04.29 10:23",
+      "update_dt": "23.08.25 19:25",
+      "workspace": {
+        "space": "team",
+        "id": 2
+      },
+      "explain": "DescriptionDescriptionDescriptionDescription",
+      "blockSpec": {
+        "Icon Image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/icons/led.png",
+        "Color": "Orange",
+        "Category": "Output",
+        "Type": "LED",
+        "Termination": "SMD",
+        "Forward Current": "10mA",
+        "LEDColor": "RGB"
+      }
+    }
+  ],
+  "customblock_info": {
+    "id": 1,
+    "userId": 1,
+    "name": "RGBLED123",
+    "create_dt": "23.04.29 10:23",
+    "update_dt": "23.05.14 16:42",
+    "workspace": {
+      "space": "user",
+      "id": 1
+    },
+    "explain": "DescriptionDescriptionDescriptionDescription123",
+    "blockSpec": {
+      "Icon Image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/icons/led.png",
+      "Color": "Orange+",
+      "Category": "Output",
+      "Type": "LED",
+      "Termination": "SMD",
+      "Forward Current": "10mA",
+      "LEDColor": "RGB"
+    }
+  },
+  "customblock_Files": [
+    {
+      "schematicsFile": "",
+      "PCBBoardFile": ""
+    }
+  ],
+  "customblock_BOMSchema": [
+    {
+      "No.": 1,
+      "Name": "BMI323",
+      "Prefix": "Footprint",
+      "Footprint": "LGA-14",
+      "Quantity": 1
+    },
+    {
+      "No.": 2,
+      "Name": "0.1uF",
+      "Prefix": "C1, C2",
+      "Footprint": "C0402",
+      "Quantity": 2
+    }
+  ],
+  "customblock_IOPorts": [
+    {
+      "No.": 1,
+      "PortName": "VDD-IMU-IN",
+      "IOType": "VDD",
+      "PinType": "IN",
+      "VoltRangeMin": 2.7,
+      "VoltRangeMax": 7
+    },
+    {
+      "No.": 2,
+      "PortName": "GND",
+      "IOType": "GND",
+      "PinType": "---",
+      "VoltRangeMin": "---",
+      "VoltRangeMax": "---"
+    },
+    {
+      "No.": 3,
+      "PortName": "I2C-IMU_SDA",
+      "IOType": "I2C",
+      "PinType": "SDA",
+      "VoltRangeMin": 1.8,
+      "VoltRangeMax": 3.5
+    },
+    {
+      "No.": 4,
+      "PortName": "I2C-IMU_SDK",
+      "IOType": "I2C",
+      "PinType": "SDK",
+      "VoltRangeMin": 1.8,
+      "VoltRangeMax": 3.5
+    },
+    {
+      "No.": 5,
+      "PortName": "GPIO-IMU_INT",
+      "IOType": "GPIO",
+      "PinType": "INT",
+      "VoltRangeMin": 1.8,
+      "VoltRangeMax": 3.5
+    }
+  ]
+}

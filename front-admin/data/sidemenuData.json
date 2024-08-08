@@ -1,0 +1,119 @@
+{
+  "menuItems": [
+    {
+      "label": "홈",
+      "key": "home",
+      "children": null
+    },
+    {
+      "label": "관리자 관리",
+      "key": "auth_admin",
+      "children": [
+        {
+          "label": "권한 관리",
+          "key": "admin"
+        },
+        {
+          "label": "계정 관리",
+          "key": "account"
+        }
+      ]
+    },
+    {
+      "label": "사용자 관리",
+      "key": "auth_user",
+      "children": [
+        {
+          "label": "사용자 정보",
+          "key": "user"
+        }
+      ]
+    },
+    {
+      "label": "팀 관리",
+      "key": "auth_team",
+      "children": [
+        {
+          "label": "팀 정보",
+          "key": "team"
+        }
+      ]
+    },
+    {
+      "label": "프로젝트 관리",
+      "key": "auth_project",
+      "children": [
+        {
+          "label": "프로젝트 정보",
+          "key": "project"
+        }
+      ]
+    },
+    {
+      "label": "커스텀블록 관리",
+      "key": "auth_customblock",
+      "children": [
+        {
+          "label": "커스텀블록 정보",
+          "key": "custom"
+        }
+      ]
+    },
+    {
+      "label": "부품 관리",
+      "key": "auth_part",
+      "children": [
+        {
+          "label": "부품 정보",
+          "key": "part"
+        }
+      ]
+    },
+    {
+      "label": "발주처 관리",
+      "key": "auth_company",
+      "children": [
+        {
+          "label": "발주처 정보",
+          "key": "company"
+        }
+      ]
+    },
+    {
+      "label": "주문/배송",
+      "key": "auth_order",
+      "children": [
+        {
+          "label": "주문 정보",
+          "key": "order"
+        },
+        {
+          "label": "배송 정보",
+          "key": "shipping"
+        }
+      ]
+    },
+    {
+      "label": "문의",
+      "key": "auth_contact",
+      "children": [
+        {
+          "label": "문의 정보",
+          "key": "contact"
+        }
+      ]
+    }
+  ],
+  "rootKeys": [
+    "home",
+    "auth_admin",
+    "auth_user",
+    "auth_team",
+    "auth_project",
+    "auth_customblock",
+    "auth_part",
+    "auth_company",
+    "auth_order",
+    "auth_contact"
+  ]
+}
