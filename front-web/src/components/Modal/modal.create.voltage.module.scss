@@ -1,0 +1,25 @@
+// modal.create.valtage
+.voltage_box {
+  margin: 24px 0;
+  .voltage_title {
+    width: 138px;
+    margin-right: 32px;
+  }
+  .voltage_input {
+    width: 400px;
+    height: 24px;
+    padding: 0 12px;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox  */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Feature",
+    "imgFileName": {
+      "active": "navFeatureActive",
+      "inactive": "navFeatureInactive"
+    }
+  },
+  {
+    "title": "Part",
+    "imgFileName": {
+      "active": "navPartActive",
+      "inactive": "navPartInactive"
+    }
+  },
+  {
+    "title": "Logic",
+    "imgFileName": {
+      "active": "navLogicActive",
+      "inactive": "navLogicInactive"
+    }
+  },
+  {
+    "title": "Layout",
+    "imgFileName": {
+      "active": "navLayoutActive",
+      "inactive": "navLayoutInactive"
+    }
+  },
+  {
+    "title": "Result",
+    "imgFileName": {
+      "active": "navResultActive",
+      "inactive": "navResultInactive"
+    }
+  },
+  {
+    "title": "Order",
+    "imgFileName": {
+      "active": "navOrderActive",
+      "inactive": "navOrderInactive"
+    }
+  }
+]

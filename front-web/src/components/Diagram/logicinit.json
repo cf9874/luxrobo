@@ -1,0 +1,139 @@
+[
+  {
+    "block_id": "yIIec3SCt6ngY0Kq4Rm7fo",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "KgtVK4wc85FP1kVyM8lcCu"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "ugpzltXvDdgKfnv1DAlIyh"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "LyrZ5i00D99qiiKecBMl2U"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "k6OWgXWu4Zk8dKmVGTBaIw"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "SfvWQ7BEuGB8sPozjPbidT"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "XNbOVWwAwlCciWgIP0zET4"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "r8ID9XVS20sW0AiEPM7SGl"
+      }
+    ],
+    "type": "Switch"
+  },
+  {
+    "block_id": "ugpzltXvDdgKfnv1DAlIyh",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "KgtVK4wc85FP1kVyM8lcCu"
+      }
+    ],
+    "type": "GPS"
+  },
+  {
+    "block_id": "LyrZ5i00D99qiiKecBMl2U",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "KgtVK4wc85FP1kVyM8lcCu"
+      }
+    ],
+    "type": "Inertial"
+  },
+  {
+    "block_id": "k6OWgXWu4Zk8dKmVGTBaIw",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "KgtVK4wc85FP1kVyM8lcCu"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "yIIec3SCt6ngY0Kq4Rm7fo"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "ugpzltXvDdgKfnv1DAlIyh"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "LyrZ5i00D99qiiKecBMl2U"
+      },
+      
+      {
+        "link_status": false,
+        "target_block_id": "SfvWQ7BEuGB8sPozjPbidT"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "XNbOVWwAwlCciWgIP0zET4"
+      },
+      {
+        "link_status": false,
+        "target_block_id": "r8ID9XVS20sW0AiEPM7SGl"
+      }
+    ],
+    "type": "LED"
+  },
+  {
+    "block_id": "SfvWQ7BEuGB8sPozjPbidT",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "Hqgh2sIBIDiVp9lw9pqgGg"
+      }
+    ],
+    "type": "SPC"
+  },
+  {
+    "block_id": "XNbOVWwAwlCciWgIP0zET4",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "Hqgh2sIBIDiVp9lw9pqgGg"
+      }
+    ],
+    "type": "USBOut"
+  },
+  {
+    "block_id": "r8ID9XVS20sW0AiEPM7SGl",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "Hqgh2sIBIDiVp9lw9pqgGg"
+      }
+    ],
+    "type": "SPC"
+  },
+  {
+    "block_id": "Hqgh2sIBIDiVp9lw9pqgGg",
+    "target_blocks": [
+      {
+        "link_status": true,
+        "target_block_id": "SfvWQ7BEuGB8sPozjPbidT"
+      },
+      {
+        "link_status": true,
+        "target_block_id": "XNbOVWwAwlCciWgIP0zET4"
+      },
+      {
+        "link_status": true,
+        "target_block_id": "r8ID9XVS20sW0AiEPM7SGl"
+      }
+    ],
+    "type": "Power"
+  }
+]

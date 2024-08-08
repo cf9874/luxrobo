@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h24v24H0z"/>
+        <g transform="translate(3.93 2.235)" fill="red">
+            <rect y="16.032" width="16.145" height="1.5" rx=".75"/>
+            <g transform="translate(.99)">
+                <rect x="6.325" y="1.032" width="1.514" height="12" rx=".757"/>
+                <g transform="rotate(-45 8.613 3.568)">
+                    <rect width="1.514" height="10" rx=".757"/>
+                    <path d="M10.09 9.25a.75.75 0 0 1-.75.75H.75a.75.75 0 1 1 0-1.5h8.59a.75.75 0 0 1 .75.75z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

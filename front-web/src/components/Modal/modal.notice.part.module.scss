@@ -1,0 +1,198 @@
+@import "globals";
+
+@mixin basic_font {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+//modal.notice.part
+.notice_modal_title {
+  height: 44px;
+  // background-color: $general_basic_sub;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: $white_1;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+.part_item_container {
+  width: 100%;
+  .part_title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.44px;
+    color: $black_5;
+    margin-top: 15px;
+    margin-bottom: 4px;
+  }
+  .part_item_wrapper {
+    border: 1px solid $gray_5;
+    display: grid;
+    grid-template-columns: 1fr 1.147fr 0.62fr;
+    border-radius: 16px;
+    height: 116px;
+    width: 100%;
+    .part_item_info_wrapper,
+    .part_item_spec_wrapper,
+    .part_item_price_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 12px;
+    }
+    .part_item_info_wrapper {
+      .part_category_box {
+        position: absolute;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        .part_item_category_img {
+          width: 20px;
+          height: 20px;
+          margin-right: 6px;
+        }
+        .part_item_category {
+          font-size: 14px;
+          margin-right: 6px;
+          font-weight: 500;
+          line-height: 0.86;
+          color: #5d5d5d;
+        }
+      }
+      .part_type_box {
+        margin-top: 20px;
+        align-items: center;
+        .part_item_img {
+          width: 64px;
+          height: 64px;
+          border: 1px solid $gray_5;
+          margin-left: 24px;
+          margin-right: 24px;
+        }
+        .part_item_type {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1;
+          color: #848484;
+        }
+        .part_item_name {
+          margin-top: 5px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1;
+          color: $general_basic_sub;
+        }
+        .info_text_wrapper {
+          width: 150px;
+        }
+      }
+    }
+    .part_item_spec_wrapper {
+      border-left: 1px solid $gray_5;
+      border-right: 1px solid $gray_5;
+      .part_item_spec_box {
+        display: flex;
+        gap: 8px;
+        margin-left: 8px;
+        align-items: center;
+        .part_item_spec {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 4px;
+          padding: 8px;
+          background-color: #e6e6e6;
+          font-family: Pretendard;
+          color: $general_basic_sub;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1;
+          letter-spacing: -0.44px;
+        }
+      }
+    }
+    .part_item_spec_title,
+    .part_item_price_title {
+      @include list_title;
+      position: absolute;
+      top: 11px;
+    }
+    .part_item_price_box {
+      margin-left: 33px;
+      display: flex;
+      justify-content: space-between;
+      .part_item_price_quantity {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.67;
+        letter-spacing: 0.5px;
+        color: $general_basic_sub;
+      }
+      .part_item_price_per {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.43;
+        letter-spacing: 0.5px;
+        color: $general_basic_sub;
+      }
+      .part_item_price_per_price_over {
+        @extend .part_item_price_per;
+        color: red;
+      }
+    }
+  }
+  .part_item_wrapper_changed {
+    @extend .part_item_wrapper;
+    border: 1px solid $general_basic_sub;
+  }
+  .empty_part {
+    border: 1px solid $gray_5;
+    border-radius: 16px;
+    height: 116px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    font-size: 68px;
+    color: #b2b2b2;
+    font-weight: bold;
+  }
+  .arrow_down {
+    width: 48px;
+    height: 40px;
+  }
+  .part_notice_text_wrapper {
+    margin-top: 20px;
+    .part_notice_text {
+      width: 100%;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #4c4c4c;
+    }
+    .part_notice_text_price_over {
+      @extend .part_notice_text;
+      color: red;
+      font-weight: 600;
+    }
+  }
+}
+.arrow_down {
+  margin: 0 auto;
+  margin-top: 20px;
+}

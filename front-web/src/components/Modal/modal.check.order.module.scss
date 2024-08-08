@@ -1,0 +1,186 @@
+@import "globals";
+
+.section_divider {
+  height: 1px;
+  background-color: $gray_5;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.title_container {
+  .title_wrapper {
+    width: 100%;
+    .title_nav_text {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+      margin-bottom: 10px;
+    }
+    .project_title {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+    }
+  }
+}
+.price_container {
+  .price_wrapper {
+    padding: 0 40px;
+    width: 100%;
+    .price_title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+      margin-bottom: 24px;
+    }
+    .price_box {
+      display: grid;
+      grid-template-columns: 0.9fr 0.3fr 0.8fr 0.3fr 0.7fr 0.3fr 0.8fr 0.3fr 1fr;
+
+      .price_nav_text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: 0.5px;
+        color: $black_3;
+      }
+      .price {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        color: $general_basic_sub;
+        margin-top: 24px;
+      }
+      .price_total {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1;
+        color: $general_basic_parimay;
+        margin-top: 24px;
+      }
+      .price_symbol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+.address_container {
+  .address_select {
+    margin-right: 40px;
+    padding: 0 40px;
+    .address_title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+      margin-bottom: 24px;
+    }
+  }
+  .address_box {
+    border-radius: 5px;
+    border: solid 1px $gray_5;
+
+    width: 600px;
+    height: 96px;
+    padding: 24px;
+    // .address_icon {
+    // }
+    .adress_data {
+      .address_name_box {
+        margin-left: 12px;
+        align-items: flex-end;
+        .address_name {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1;
+          letter-spacing: 0.5px;
+          color: $black_3;
+        }
+        .address_tel {
+          margin-left: 12px;
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 0.4px;
+          color: $black_3;
+        }
+      }
+      .address_text {
+        margin-top: 12px;
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        color: $black_3;
+        max-width: 520px;
+      }
+    }
+  }
+}
+.payment_container {
+  .payment_select {
+    margin-right: 40px;
+    padding: 0 40px;
+    .payment_title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+      margin-bottom: 24px;
+    }
+  }
+  .payment_box {
+    width: 600px;
+    height: 96px;
+    border-radius: 5px;
+    border: solid 1px $gray_5;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+    .payment_data {
+      border-right: 1px solid $gray_5;
+      .payment_img {
+        width: 68px;
+        height: 42px;
+        border: 1px solid $gray_5;
+        border-radius: 5px;
+        margin-right: 24px;
+      }
+      .card_company {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.4px;
+        color: $black_4;
+      }
+      .payment_card_name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        color: $general_basic_sub;
+      }
+    }
+    .payment_number {
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: $black_3;
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import "globals";
+
+@mixin basic_font {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+
+.title_wrapper {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid $general_basic_parimay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $general_basic_sub;
+  }
+  .close_button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 5px;
+  }
+}
+.block_info_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  .img_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .name_input_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    .input_label {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      color: $black_5;
+      margin-right: 8px;
+    }
+    .part_name_input {
+      width: 228px;
+      height: 24px;
+      border-radius: 2px;
+    }
+    .option_value {
+      width: 239px;
+      height: 24px;
+      border: 1px solid $gray_4;
+      padding-left: 8px;
+    }
+  }
+}
+
+.block_option_info_wrapper {
+  height: 540px;
+  border-top: 1px solid $gray_4;
+  padding: 0 20px;
+  padding-top: 10px;
+  .info_row {
+    margin: 4px 0;
+    display: flex;
+    width: 100%;
+    .option_name {
+      width: 95px;
+      @include basic_font;
+    }
+    .option_value {
+      margin-left: 5px;
+      padding-left: 8px;
+      width: 190px;
+      border: 1px solid $gray_4;
+      height: 24px;
+    }
+  }
+  .option_image_box {
+    .option_image_title {
+      margin-bottom: 10px;
+      @include basic_font;
+    }
+    .option_images {
+      padding: 0 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .pin_connection_box {
+    margin-bottom: 10px;
+    .pin_connection_title {
+      @include basic_font;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .pin_connection_nav,
+    .pin_connection_data {
+      display: grid;
+      width: 100%;
+      height: 36px;
+      grid-template-columns: repeat(3, 1fr);
+      .pin_connection_nav_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid $gray_4;
+        border-left: 1px solid $gray_4;
+        border-bottom: 1px solid $gray_4;
+      }
+      .pin_connection_nav_title:last-child {
+        border-right: 1px solid $gray_4;
+      }
+      .pin_connection_data_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid $gray_4;
+        border-bottom: 1px solid $gray_4;
+      }
+      .pin_connection_data_item:last-child {
+        border-right: 1px solid $gray_4;
+      }
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $gray_4;
+    margin: 10px 0;
+  }
+}
+
+.button_group {
+  border-top: 1px solid $gray_4;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .edit_button {
+    @include next_button;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 276px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+  .button_box {
+    display: flex;
+    gap: 12px;
+    .cancel_button,
+    .set_button {
+      @include general_basic_button;
+      width: 132px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $black_5;
+    }
+  }
+}

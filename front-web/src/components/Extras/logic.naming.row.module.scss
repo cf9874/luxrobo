@@ -1,0 +1,68 @@
+@import "globals";
+
+.BOM_item_wrapper {
+  width: 512px;
+  display: grid;
+  grid-template-columns: 0.48fr 1.2fr 1fr 1.56fr 0.9fr;
+  .BOM_item,
+  .BOM_item_center {
+    padding: 0 12px;
+  }
+}
+.BOM_item_wrapper {
+  border-bottom: 1px solid $general_basic_sub;
+  border-right: 1px solid $general_basic_sub;
+  border-left: 1px solid $general_basic_sub;
+  .BOM_item {
+    border-right: 1px solid $general_basic_sub;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+  .BOM_item:last-child {
+    border: none;
+  }
+  .BOM_item_center {
+    @extend .BOM_item;
+    justify-content: center;
+  }
+}
+.IO_item_wrapper {
+  @extend .BOM_item_wrapper;
+  grid-template-columns: 1fr 140px 100px 100px 1.6fr 1.6fr;
+  border-bottom: 1px solid $general_basic_sub;
+  border-right: 1px solid $general_basic_sub;
+  border-left: 1px solid $general_basic_sub;
+  .IO_item {
+    border-right: 1px solid $general_basic_sub;
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    padding: 0 6px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    color: #333;
+  }
+  .IO_item_center {
+    @extend .BOM_item;
+    justify-content: center;
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+.IO_type_dropdown {
+  width: 80px;
+}
+.pin_type_dropdown {
+  width: 80px;
+}
+.pin_type_input {
+  width: 74px;
+  height: 30px;
+  padding-left: 10px;
+}

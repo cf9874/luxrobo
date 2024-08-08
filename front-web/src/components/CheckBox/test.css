@@ -1,0 +1,8 @@
+.ant-checkbox {
+  background-color: red !important;
+  .ant-checkbox-input {
+    .ant-checkbox-inner::after {
+      border: 2px solid black !important;
+    }
+  }
+}

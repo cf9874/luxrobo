@@ -1,0 +1,223 @@
+@import "globals";
+
+@mixin project_item {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  @include shadow2dp;
+  &:hover {
+    background-color: $general_basic_parimay;
+  }
+}
+@mixin title_font {
+  font-family: Pretendard;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+@media screen and (max-width: 1600px) {
+  .project_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .project_list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 3fr 400px;
+}
+
+.contents_container {
+  height: calc(100vh - 60px);
+  background-color: $white_2;
+  border-right: 1px solid $general_grid_line_2;
+  .content_main_title {
+    margin: 24px 40px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $general_basic_sub;
+
+    div:first-child {
+      @include title_font;
+      font-size: 28px;
+      margin-right: 8px;
+    }
+    div:last-child {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      color: $general_basic_sub;
+    }
+  }
+  .projects_title {
+    margin: 40px 40px 32px;
+    height: 40px;
+    div:first-child {
+      @include title_font;
+      font-size: 24px;
+    }
+  }
+  .project_list {
+    height: calc(100vh - 250px);
+    overflow: scroll;
+    overflow-x: hidden;
+    @include scrollbar;
+    display: grid;
+    margin-top: 32px;
+    padding: 0 24px;
+
+    .add_project {
+      @include project_item;
+      .add_icon {
+        width: 50%;
+        height: 91.5px;
+        font-size: 50px;
+      }
+      &:hover {
+        background-color: $white_1;
+        border: 1px solid $general_basic_parimay;
+        color: $general_basic_parimay;
+      }
+
+      &:active {
+        color: $white_1;
+        background-color: $general_basic_parimay;
+      }
+    }
+    .project_item {
+      @include project_item;
+      .project_item_img {
+        width: 172px;
+        height: 91.5px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background: $white_1;
+        padding-bottom: 20px;
+      }
+      .divider {
+        height: 2px;
+        width: 172px;
+        margin-top: 15px;
+        background-color: $general_basic_sub;
+      }
+      &:hover {
+        border: 1px solid $general_basic_parimay;
+        background-color: $white_1;
+      }
+      &:hover .divider {
+        background-color: $general_basic_parimay;
+      }
+      &:active {
+        background-color: $general_basic_parimay;
+      }
+      &:active .divider {
+        background-color: $white_1;
+      }
+    }
+    .project_item_project_name {
+      width: 168px;
+      height: 46px;
+      margin: 8px 8px 0;
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.13;
+      text-align: center;
+    }
+  }
+}
+.project_detail_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+
+  height: calc(100vh - 60px);
+
+  .project_detail_title {
+    padding-bottom: 12px;
+    margin: 24px 38px;
+
+    border-bottom: 1px solid $general_basic_sub;
+    div:first-child {
+      @include title_font;
+      font-size: 24px;
+      margin-top: 4px;
+      padding-left: 64px;
+    }
+  }
+  .project_detail_wrapper {
+    padding: 0 38px;
+    .project_detail_img {
+      border-radius: 10px;
+      border: solid 1px #dcdcdc;
+      width: 324px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    .project_properties_title {
+      @include title_font();
+      font-size: 12px;
+      color: $general_basic_sub;
+    }
+    .project_properties_desc {
+      font-family: Pretendard;
+      font-size: 16px;
+      line-height: 1;
+      color: $black_3;
+    }
+    .project_name {
+      .project_properties_desc {
+        font-family: Pretendard;
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        color: $black_3;
+      }
+    }
+    .project_status {
+      :nth-child(2n + 1) .project_properties_desc {
+        margin-left: 24px;
+      }
+    }
+  }
+  .project_detail_wrapper > div {
+    margin-top: 12px;
+  }
+  .menu_button_gruop {
+    margin: 0 30px;
+    margin-bottom: 40px;
+  }
+  .menu_button_gruop1 {
+    button {
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+  .menu_button_gruop2 {
+    @extend .menu_button_gruop1;
+    margin-top: 20px;
+    button {
+      width: 100%;
+      height: 40px;
+    }
+  }
+}

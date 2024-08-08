@@ -1,0 +1,135 @@
+@import "globals";
+
+@mixin basic_font {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+// modal.import.dwg
+.import_dwg_container {
+  display: flex;
+  .dwg_sheet {
+    width: 844px;
+    height: 670px;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(#e6e6e6 1px, transparent 1px),
+      linear-gradient(90deg, #e6e6e6 1px, transparent 1px), linear-gradient(#e6e6e6 1px, transparent 1px),
+      linear-gradient(90deg, #e6e6e6 1px, transparent 1px);
+    background-size:
+      100px 100px,
+      100px 100px,
+      20px 20px,
+      20px 20px;
+    background-position:
+      -2px -2px,
+      -2px -2px,
+      -1px -1px,
+      -1px -1px;
+    box-shadow: inset 0 1px 4px 2px rgba(0, 0, 0, 0.1);
+  }
+  .divider {
+    height: 1px;
+    background-color: $gray_4;
+    margin: 24px 0;
+  }
+  .import_img_menu {
+    background: $white_1;
+    width: 356px;
+    padding: 0 24px;
+    .import_dwg_button_wrapper {
+      margin-top: 40px;
+      .import_dwg_button {
+        width: 308px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: $white_1;
+        border: 1px solid $general_basic_sub;
+        color: $general_basic_sub;
+        font-size: 18px;
+        font-weight: 500;
+        &:active {
+          background-color: $general_basic_sub;
+          border: 1px solid $general_basic_sub;
+          color: $white_1;
+        }
+      }
+    }
+    .menu_title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1;
+      color: $general_basic_sub;
+    }
+
+    .size_title {
+      margin-right: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      color: $general_basic_sub;
+    }
+    .times_text {
+      margin: 0 6px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      color: $general_basic_sub;
+    }
+    .size_menu_input {
+      width: 80px;
+      height: 24px;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+    .origin_pos_menu_input {
+      width: 70px;
+      height: 24px;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+    .position_menu_input {
+      width: 70px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .unit_box {
+      width: 62px;
+      height: 24px;
+      background-color: $general_basic_sub;
+      color: $white_1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 4px;
+      border-radius: 2px;
+    }
+    .unit_dropdown {
+      margin-left: 4px;
+    }
+    .color_invert_checkbox {
+      border: none;
+    }
+    .color_invert_checkbox {
+      margin-right: 12px;
+    }
+    .color_invert_text {
+      font-size: 20px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $general_basic_sub;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+@import "globals";
+
+@mixin basic_font {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+@mixin placeholder {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: $gray_2;
+}
+
+.title_wrapper {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid $general_basic_parimay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $general_basic_sub;
+  }
+  .close_button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 5px;
+  }
+}
+.block_info_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  .img_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .input_label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: $black_5;
+    margin-right: 8px;
+  }
+}
+
+.block_option_info_wrapper {
+  height: 480px;
+  border-top: 1px solid $gray_4;
+  padding: 0 20px;
+  padding-top: 10px;
+  .info_row {
+    margin: 4px 0;
+    display: flex;
+    width: 100%;
+    .option_name {
+      width: 95px;
+      @include basic_font;
+    }
+    .option_value {
+      width: 190px;
+      border: 1px solid $gray_4;
+      height: 24px;
+    }
+    .part_info_input {
+      &::placeholder {
+        @include placeholder;
+      }
+      border: 1px solid $general_basic_sub;
+      width: 200px;
+      height: 24px;
+      border-radius: 2px;
+    }
+    .part_info_desc_input {
+      &::placeholder {
+        @include placeholder;
+      }
+      @include scrollbar;
+      border: 1px solid $general_basic_sub;
+      width: 200px;
+      height: 48px;
+      border-radius: 2px;
+      resize: none;
+    }
+  }
+  .info_row_dropdown {
+    @extend .info_row;
+    display: flex;
+    .icon_dropdown {
+      width: 200px;
+    }
+  }
+}
+.spec_button_wrapper {
+  .spec_button {
+    @include general_sub_button;
+    height: 40px;
+    width: 276px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $gray_4;
+  margin: 10px 0;
+}
+
+.button_group {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .edit_button {
+    @include next_button;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 276px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+  .button_box {
+    display: flex;
+    gap: 12px;
+    .cancel_button,
+    .set_button {
+      @include general_basic_button;
+      width: 132px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $black_5;
+    }
+  }
+}
+.part_spec_list {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray_3;
+    border: 2px solid $gray_3;
+    border-radius: 12px;
+  }
+  width: 100%;
+  height: 269px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #c3c3c3;
+
+  .part_spec_list_list_item {
+    width: 532px;
+
+    height: 40px;
+    padding-left: 12px;
+    border-radius: 5px;
+    .part_spec_list_name {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #4c4c4c;
+    }
+    .part_spec_list_info_box {
+      display: flex;
+      align-items: center;
+    }
+    .part_spec_list_delete_icon {
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      margin-right: 2px;
+    }
+  }
+}

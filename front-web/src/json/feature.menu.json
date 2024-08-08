@@ -1,0 +1,65 @@
+[
+  {
+    "title": "All",
+    "activeColor": "#45d6df",
+    "imgName": {
+      "active": "headerCategoryAllActive",
+      "inactive": "headerCategoryAllInactive"
+    },
+    "allowCategoryList": ["Comm", "MCU", "Input", "Output", "PowerIn", "PowerOut", "Battery", "Custom"]
+  },
+  {
+    "title": "Input",
+    "activeColor": "#1aa7ff",
+    "imgName": {
+      "active": "headerCategoryInputActive",
+      "inactive": "headerCategoryInputInactive"
+    },
+    "allowCategoryList": ["Input"]
+  },
+  {
+    "title": "Output",
+    "activeColor": "#ff785c",
+    "imgName": {
+      "active": "headerCategoryOutputActive",
+      "inactive": "headerCategoryOutputInactive"
+    },
+    "allowCategoryList": ["Output"]
+  },
+  {
+    "title": "Comm",
+    "activeColor": "#ffc620",
+    "imgName": {
+      "active": "headerCategoryCommInactive",
+      "inactive": "headerCategoryCommInactive"
+    },
+    "allowCategoryList": ["Comm"]
+  },
+  {
+    "title": "Battery",
+    "activeColor": "#5ff053",
+    "imgName": {
+      "active": "headerCategoryBatteryInactive",
+      "inactive": "headerCategoryBatteryInactive"
+    },
+    "allowCategoryList": ["Battery"]
+  },
+  {
+    "title": "Power",
+    "activeColor": "#595bfb",
+    "imgName": {
+      "active": "headerCategoryPowerInactive",
+      "inactive": "headerCategoryPowerInactive"
+    },
+    "allowCategoryList": ["PowerIn", "PowerOut"]
+  },
+  {
+    "title": "Custom",
+    "activeColor": "#000",
+    "imgName": {
+      "active": "headerCategoryCustomInactive",
+      "inactive": "headerCategoryCustomInactive"
+    },
+    "allowCategoryList": ["Custom"]
+  }
+]

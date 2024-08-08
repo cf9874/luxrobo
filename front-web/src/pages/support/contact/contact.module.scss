@@ -1,0 +1,94 @@
+@import "globals";
+
+@mixin title_font {
+  font-family: Pretendard;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  .contents_container {
+    height: calc(100vh - 60px);
+    background-color: $white_2;
+    border-right: 1px solid $general_grid_line_2;
+    // padding: 0 40px;
+    .content_main_title_box {
+      margin: 24px 40px;
+
+      padding-bottom: 12px;
+      border-bottom: 1px solid $general_basic_sub;
+      .content_main_title {
+        @include title_font;
+        font-size: 28px;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        color: $general_basic_sub;
+      }
+    }
+    .contact_wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 40px;
+      .contact_box {
+        margin-bottom: 20px;
+        .contact_title {
+          @include title_font;
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        .contact_input,
+        .contac_input_content {
+          @include general_text_input;
+          width: 600px;
+          border: 1px solid $general_basic_sub;
+          padding-left: 12px;
+          border-radius: 5px;
+          font-size: 20px;
+
+          &::placeholder {
+            font-family: Pretendard;
+            color: $gray_2;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+        .contact_dropdown {
+          width: 600px;
+        }
+        .dropdown_default {
+          color: $gray_2;
+          font-size: 20px;
+        }
+        .dropdown_value {
+          color: $gray_2;
+          font-size: 20px;
+          color: $general_basic_sub;
+        }
+        .contact_input {
+          height: 40px;
+        }
+        .contac_input_content {
+          display: flex;
+          width: 600px;
+          height: 320px;
+          font-weight: 500;
+          font-family: Pretendard;
+          color: $general_basic_sub;
+          resize: none;
+        }
+      }
+      .contact_button {
+        @include general_basic_button;
+        width: 600px;
+        height: 40px;
+      }
+    }
+  }
+}

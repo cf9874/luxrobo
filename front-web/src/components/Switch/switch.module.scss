@@ -1,0 +1,111 @@
+@import "globals";
+
+.switch_basic {
+  width: 110px;
+  height: 40px;
+  border: 2px solid $white_1;
+  @include shadow2dp;
+
+  &[aria-checked="true"] {
+    div {
+      inset-inline-start: calc(100% - 34px) !important;
+      &::before {
+        background-size: 80%;
+        background-position: center;
+        background-color: $white_1 !important;
+      }
+    }
+  }
+  &[aria-checked="false"] {
+    background-color: #f1f1f1 !important;
+  }
+  div {
+    &::before {
+      background-size: 80%;
+      background-position: center;
+      width: 36px !important;
+      height: 36px !important;
+      border-radius: 50% !important;
+      inset-inline-end: 0 !important;
+      inset-inline-start: -1px !important;
+      top: -1px !important;
+    }
+  }
+  span {
+    &[class="ant-switch-inner-unchecked"] {
+      margin-top: -30px !important;
+      margin-left: 10px !important;
+    }
+  }
+}
+
+.switch_power_to_logic {
+  @extend .switch_basic;
+  &[aria-checked="true"] {
+    background-color: $general_basic_parimay !important;
+    div {
+      &::before {
+        background-image: url("../../assets/image/switch-power.png");
+      }
+    }
+  }
+  div {
+    &::before {
+      background-image: url("../../assets/image/switch-logic.png");
+      background-color: $general_basic_parimay !important;
+    }
+  }
+}
+
+.switch_top_to_bottom {
+  @extend .switch_basic;
+  &[aria-checked="true"] {
+    background-color: #7c7cfc !important;
+    div {
+      &::before {
+        background-image: url("../../assets/image/switch-bottom.png");
+        inset-inline-start: -1px !important;
+        top: -1px !important;
+      }
+    }
+  }
+  &[aria-checked="false"] {
+    background-color: #ff7474 !important;
+  }
+  div {
+    &::before {
+      background-image: url("../../assets/image/switch-top.png");
+      background-color: $white_1 !important;
+      inset-inline-start: -2px !important;
+      top: -2px !important;
+    }
+  }
+}
+
+.checked_basic {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $white_1;
+}
+.unchecked_basic {
+  height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $gray_2;
+}
+
+.checked_power_to_logic,
+.checked_top_to_bottom {
+  @extend .checked_basic;
+}
+.unchecked_power_to_logic {
+  @extend .unchecked_basic;
+  color: $black_1;
+}
+.unchecked_top_to_bottom {
+  @extend .unchecked_basic;
+  color: $white_1;
+}

@@ -1,0 +1,50 @@
+@import "globals";
+
+@mixin basic_font {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+.payment_card_wrapper {
+  align-items: center;
+  .payment_card_img {
+    width: 68px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $general_grid_line_2;
+    margin-left: 52px;
+    margin-right: 24px;
+  }
+  .payment_card_name_box {
+    margin-right: 24px;
+    .card_company {
+      @include list_title;
+    }
+    .card_name {
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+    }
+  }
+  .card_number {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: $black_3;
+  }
+}

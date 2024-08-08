@@ -1,0 +1,1311 @@
+{
+  "alarms": {
+    "alarmID": 0,
+    "code": 0,
+    "created_at": "2023-11-10T02:30:30Z",
+    "is_checked": true,
+    "orderID": 0,
+    "projectID": 0,
+    "updated_at": "2023-11-10T02:30:30Z"
+  },
+  "alarms_list": [
+    {
+      "alarmID": 0,
+      "code": 0,
+      "created_at": "2023-11-10T02:30:30Z",
+      "is_checked": true,
+      "orderID": 0,
+      "projectID": 0,
+      "updated_at": "2023-11-10T02:30:30Z"
+    }
+  ],
+  "alarms_check": {
+    "alarmID": 0,
+    "message": "success"
+  },
+  "alarms_new": {
+    "alarmID": 0,
+    "message": "success"
+  },
+  "billing_begin": {
+    "amount": 0,
+    "billSeqNo": 0,
+    "billStep": 0,
+    "customerKey": "string",
+    "orderId": "string"
+  },
+  "billing_cancel": {
+    "billSeqNo": 0,
+    "billStep": 0,
+    "orderId": "string"
+  },
+  "billing_end": {
+    "amount": 0,
+    "billSeqNo": 0,
+    "orderId": "string",
+    "paymentKey": "string"
+  },
+  "contacts": {
+    "contactID": 0,
+    "content": "string",
+    "created_at": "2023-11-10T02:30:30Z",
+    "phone_number": "string",
+    "tag": 0,
+    "title": "string",
+    "updated_at": "2023-11-10T02:30:30Z",
+    "userID": 0,
+    "writer": "string"
+  },
+  "contacts_edit": {
+    "contactID": 0,
+    "message": "success"
+  },
+  "contacts_list": [
+    {
+      "contactID": 0,
+      "content": "string",
+      "created_at": "2023-11-10T02:30:30Z",
+      "phone_number": "string",
+      "tag": 0,
+      "title": "string",
+      "updated_at": "2023-11-10T02:30:30Z",
+      "userID": 0,
+      "writer": "string"
+    }
+  ],
+  "contacts_new": {
+    "contactID": 0,
+    "message": "success"
+  },
+  "contacts_remove": {
+    "contactID": 0,
+    "message": "success"
+  },
+  "customs": {
+    "color": "string",
+    "customblockID": 0,
+    "description": "string",
+    "name": "string",
+    "partID": 0,
+    "specification": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "teamID": 0,
+    "type": "string",
+    "userID": 0,
+    "createdAt": "string",
+    "updatedAt": "string"
+  },
+  "customs_clone": {
+    "customblockID": 0,
+    "message": "success"
+  },
+  "custom_edit": {
+    "customblockID": 0,
+    "message": "success"
+  },
+  "customs_list": [
+    {
+      "color": "string",
+      "customblockID": 0,
+      "description": "string",
+      "name": "string",
+      "partID": 1,
+      "specification": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "teamID": 0,
+      "type": "string",
+      "userID": 0,
+      "createdAt": "string",
+      "updatedAt": "string"
+    },
+    {
+      "color": "string",
+      "customblockID": 0,
+      "description": "string",
+      "name": "string",
+      "partID": 2,
+      "specification": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "teamID": 0,
+      "type": "string",
+      "userID": 0,
+      "createdAt": "string",
+      "updatedAt": "string"
+    }
+  ],
+  "customs_new": {
+    "customblockID": 0,
+    "message": "success"
+  },
+  "customs_remove": {
+    "customblockID": 0,
+    "message": "success"
+  },
+  "customs_share": {
+    "customblockID": 0,
+    "message": "success",
+    "new_customblockID": 0
+  },
+  "faqs": {
+    "content": "string",
+    "created_at": "2023-11-10T02:30:30Z",
+    "faqID": 1,
+    "title": "테스트",
+    "updated_at": "2023-11-10T02:30:30Z",
+    "upload_image": "string",
+    "views": 0,
+    "writer": "관리자"
+  },
+  "faqs_list": [
+    {
+      "content": "string",
+      "created_at": "2023-11-10T02:30:30Z",
+      "faqID": 1,
+      "title": "테스트",
+      "updated_at": "2023-11-10T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    },
+    {
+      "content": "string",
+      "created_at": "2023-11-10T02:30:30Z",
+      "faqID": 2,
+      "title": "테스트",
+      "updated_at": "2023-11-10T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    },
+    {
+      "content": "string",
+      "created_at": "2023-11-10T02:30:30Z",
+      "faqID": 3,
+      "title": "테스트",
+      "updated_at": "2023-11-10T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    },
+    {
+      "content": "string",
+      "created_at": "2023-11-10T02:30:30Z",
+      "faqID": 4,
+      "title": "결제 수단 추가 관련",
+      "updated_at": "2023-11-10T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    },
+    {
+      "content": "string",
+      "created_at": "2023-11-14T02:30:30Z",
+      "faqID": 5,
+      "title": "커스텀 블록 추가 관련",
+      "updated_at": "2023-11-14T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    }
+  ],
+  "faqs_view": {
+    "faqID": 3,
+    "message": "success"
+  },
+  "notices": {
+    "content": "string",
+    "created_at": "2023-11-14T02:30:30Z",
+    "noticeID": 1,
+    "title": "서비스 버전 업 공지",
+    "updated_at": "2023-11-14T02:30:30Z",
+    "upload_image": "string",
+    "views": 0,
+    "writer": "관리자"
+  },
+  "notice_list": [
+    {
+      "content": "string",
+      "created_at": "2023-11-14T02:30:30Z",
+      "noticeID": 1,
+      "title": "서비스 버전 업 공지",
+      "updated_at": "2023-11-14T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    },
+    {
+      "content": "string",
+      "created_at": "2023-11-14T02:30:30Z",
+      "noticeID": 2,
+      "title": "서비스 버전 업 공지",
+      "updated_at": "2023-11-14T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    },
+    {
+      "content": "string",
+      "created_at": "2023-11-14T02:30:30Z",
+      "noticeID": 3,
+      "title": "서비스 버전 업 공지",
+      "updated_at": "2023-11-14T02:30:30Z",
+      "upload_image": "string",
+      "views": 0,
+      "writer": "관리자"
+    }
+  ],
+  "notices_view": {
+    "message": "success",
+    "noticeID": 0
+  },
+  "feature_custom_setting": {
+    "message": "success"
+  },
+  "feature_init": [
+    {
+      "category": "string",
+      "color": "string",
+      "icon": "string",
+      "tags": ["string"],
+      "type": "string"
+    }
+  ],
+  "feature_load": [
+    {
+      "block_id": "string",
+      "part_id": "string",
+      "selected_option": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "type": "string"
+    }
+  ],
+  "feature_next": {
+    "message": "success"
+  },
+  "feature_recommend": {
+    "part_id": "string",
+    "stock": 0
+  },
+  "feature_save": {
+    "message": "success"
+  },
+  "feature_setting": {
+    "data": {
+      "info": {
+        "category": "string",
+        "color": "string",
+        "icon": "string",
+        "tags": ["string"],
+        "type": "string"
+      },
+      "option_links": [
+        {
+          "child_level": 0,
+          "option_list": [0],
+          "parent_level": 0
+        }
+      ],
+      "options": [
+        {
+          "choices": [["string"]],
+          "id": 0,
+          "is_sub": true,
+          "option_num": 0,
+          "title": "string",
+          "user_input": true
+        }
+      ],
+      "seleted_option": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    }
+  },
+  "layout_autoplace": {
+    "hole_blocks": [
+      {
+        "diameter": 0,
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "image_blocks": [
+      {
+        "imageStr": "string",
+        "is_top": true,
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "layout_blocks": [
+      {
+        "block_id": "string",
+        "is_auto": true,
+        "is_placed": true,
+        "is_top": true,
+        "out_shape_b": [
+          {
+            "r": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "out_shape_t": [
+          {
+            "r": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "text_blocks": [
+      {
+        "font_size": 0,
+        "is_top": true,
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        },
+        "string": "string",
+        "stroke_width": 0
+      }
+    ]
+  },
+  "layout_blockinfo": {
+    "category": "string",
+    "color": "string",
+    "description": "string",
+    "footprint_image": "string",
+    "icon": "string",
+    "option_names": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "partID": "string",
+    "part_image": "string",
+    "part_name": "string",
+    "specification": "string",
+    "symbol_image": "string",
+    "type": "string"
+  },
+  "layout_board": {
+    "hole_blocks": [
+      {
+        "diameter": 0,
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "image_blocks": [
+      {
+        "imageStr": "string",
+        "is_top": true,
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "layout_blocks": [
+      {
+        "block_id": "string",
+        "is_auto": true,
+        "is_placed": true,
+        "is_top": true,
+        "out_shape_b": [
+          {
+            "r": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "out_shape_t": [
+          {
+            "r": 0,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "shape": [
+      {
+        "r": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "text_blocks": [
+      {
+        "font_size": 0,
+        "is_top": true,
+        "pos": {
+          "r": 0,
+          "x": 0,
+          "y": 0
+        },
+        "string": "string",
+        "stroke_width": 0
+      }
+    ]
+  },
+  "layout_next": {
+    "message": "success"
+  },
+  "layout_params": {
+    "block_params": [
+      {
+        "block_id": "string",
+        "margin": [0]
+      }
+    ],
+    "net_params": [
+      {
+        "add_tp": true,
+        "clearance": 0,
+        "net": "string",
+        "track_width": 0,
+        "viaDrill": 0,
+        "viaHole": 0
+      }
+    ],
+    "part_params": [
+      {
+        "footprint": "string",
+        "part_name": "string",
+        "part_prefix": "string",
+        "showName": true,
+        "showPrefix": true
+      }
+    ],
+    "preference_params": [
+      {
+        "grid_size": 0,
+        "unit": "string"
+      }
+    ]
+  },
+  "layout_params_change": {
+    "message": "success"
+  },
+  "layout_save": {
+    "message": "success"
+  },
+  "logic_block_copy": {
+    "block_id": 0
+  },
+  "logic_block_remove": {
+    "message": "success"
+  },
+  "logic_blockinfo": {
+    "block_id": "string",
+    "category": "string",
+    "footprintImage": "string",
+    "option_names": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "part_image": "string",
+    "part_name": "string",
+    "symbolImage": "string",
+    "type": "string"
+  },
+  "logic_blocksch": {
+    "params": {
+      "schema_bom": [
+        {
+          "part_name": "5.1k",
+          "part_prefix": "R",
+          "footprint": "R0402"
+        },
+        {
+          "part_name": "5.1k",
+          "part_prefix": "R",
+          "footprint": "R0402"
+        },
+        {
+          "part_name": "10k",
+          "part_prefix": "R",
+          "footprint": "R0402"
+        },
+        {
+          "part_name": "10k",
+          "part_prefix": "R",
+          "footprint": "R0402"
+        },
+        {
+          "part_name": "USB4105-GF-A",
+          "part_prefix": "USB",
+          "footprint": "TYPE-C-SMD_SBC-160S1A-20-S412"
+        }
+      ],
+      "naming_param": [
+        {
+          "pin_name": "GND",
+          "io_type": "GND",
+          "pin_type": "",
+          "min_vol": 0,
+          "max_vol": 0
+        },
+        {
+          "pin_name": "USB-USBOut398_Dp",
+          "io_type": "USB",
+          "pin_type": "Dp",
+          "min_vol": 0,
+          "max_vol": 0
+        },
+        {
+          "pin_name": "USB-USBOut398_Dm",
+          "io_type": "USB",
+          "pin_type": "Dm",
+          "min_vol": 0,
+          "max_vol": 0
+        },
+        {
+          "pin_name": "VDD-USBOut398_INOUT",
+          "io_type": "VDD",
+          "pin_type": "INOUT",
+          "min_vol": 0,
+          "max_vol": 0
+        },
+        {
+          "pin_name": "GND",
+          "io_type": "GND",
+          "pin_type": "",
+          "min_vol": 0,
+          "max_vol": 0
+        },
+        {
+          "pin_name": "GND",
+          "io_type": "GND",
+          "pin_type": "",
+          "min_vol": 0,
+          "max_vol": 0
+        },
+        {
+          "pin_name": "GND",
+          "io_type": "GND",
+          "pin_type": "",
+          "min_vol": 0,
+          "max_vol": 0
+        }
+      ]
+    },
+    "schema_image": ""
+  },
+  "logic_blocksch_update": {
+    "params": {
+      "naiming_param": [
+        {
+          "io_type": "string",
+          "max_vol": "string",
+          "min_vol": "string",
+          "pin_name": "string",
+          "pin_type": "string"
+        }
+      ],
+      "schema_bom": [
+        {
+          "footprint": "string",
+          "part_name": "string",
+          "part_prefix": "string"
+        }
+      ]
+    },
+    "schema_image": "string"
+  },
+  "logic_blockvoltage": {
+    "block_info": {
+      "block_id": "string",
+      "category": "string",
+      "display_option": "string",
+      "is_sub": true,
+      "seleted_option": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "type": "string"
+    },
+    "part_info": {
+      "datasheet_url": "string",
+      "description": "string",
+      "is_support": true,
+      "manufacturer": "string",
+      "mouser_url": "string",
+      "part_id": "string",
+      "part_img": "string",
+      "part_name": "string",
+      "quantity_prices": [
+        {
+          "price": 0,
+          "quantity": 0
+        }
+      ],
+      "stock": 0
+    }
+  },
+  "logic_blockvoltage_apply": {
+    "message": "success"
+  },
+  "logic_custom_open": {
+    "color": "string",
+    "description": "string",
+    "name": "string",
+    "part_id": "string",
+    "specification": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "type": "string"
+  },
+  "logic_custom_set": {
+    "block_id": "string",
+    "part_id": "string",
+    "type": "string"
+  },
+  "logic_custom_save": {
+    "message": "success"
+  },
+  "logic_init": [
+    {
+      "block_id": "string",
+      "category": "string",
+      "footprintImage": "string",
+      "option_names": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "part_image": "string",
+      "part_name": "string",
+      "symbolImage": "string",
+      "type": "string"
+    }
+  ],
+  "logic_links": [
+    {
+      "block_id": "string",
+      "target_blocks": [
+        {
+          "link_status": true,
+          "target_block_id": "string"
+        }
+      ],
+      "type": "string"
+    }
+  ],
+  "logic_links_put": {
+    "message": "success"
+  },
+  "logic_naimingparam": {
+    "params": {
+      "naiming_param": [
+        {
+          "io_type": "string",
+          "max_vol": "string",
+          "min_vol": "string",
+          "pin_name": "string",
+          "pin_type": "string"
+        }
+      ],
+      "schema_bom": [
+        {
+          "footprint": "string",
+          "part_name": "string",
+          "part_prefix": "string"
+        }
+      ]
+    },
+    "schema_image": "string"
+  },
+  "logic_next": {
+    "message": "success"
+  },
+  "logic_powernets": {
+    "groups": ["string"],
+    "net_name": "string",
+    "output": [
+      {
+        "regulator_id": "string",
+        "target_net_name": "string"
+      }
+    ],
+    "ref_voltage": "string"
+  },
+  "logic_powernets_new": {
+    "from_net_name": "string",
+    "new_net_out": {
+      "regulator_id": "string",
+      "target_net_name": "string"
+    }
+  },
+  "logic_regulator": {
+    "block_id": "string",
+    "part_id": "string",
+    "type": "string"
+  },
+
+  "orders": {
+    "installment": "string",
+    "order_address": "string",
+    "order_card": "string",
+    "order_price": "string",
+    "order_status": "string",
+    "part_total_price": "string",
+    "project": "string",
+    "shipping_price": "string",
+    "total_price": "string"
+  },
+  "order_detail": {
+    "is_smt": true,
+    "is_work": true,
+    "maker": "string",
+    "order_date": "string",
+    "order_quntity": "string",
+    "pcb_order_option": "string"
+  },
+  "order_detail_shipping": {
+    "shipping_info": [
+      {
+        "action": "string",
+        "point": "string",
+        "time": "string"
+      }
+    ]
+  },
+  "part_apply": {
+    "add_blocks": [
+      {
+        "BlockInfo": {
+          "block_id": "string",
+          "category": "string",
+          "display_option": "string",
+          "is_sub": true,
+          "seleted_option": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "type": "string"
+        },
+        "part_info": {
+          "datasheet_url": "string",
+          "description": "string",
+          "is_support": true,
+          "manufacturer": "string",
+          "mouser_url": "string",
+          "part_id": "string",
+          "part_img": "string",
+          "part_name": "string",
+          "quantity_prices": [
+            {
+              "price": 0,
+              "quantity": 0
+            }
+          ],
+          "stock": 0
+        }
+      }
+    ],
+    "deleted_block_ids": ["string"]
+  },
+  "part_block_delete": {
+    "add_blocks": [
+      {
+        "BlockInfo": {
+          "block_id": "string",
+          "category": "string",
+          "display_option": "string",
+          "is_sub": true,
+          "seleted_option": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "type": "string"
+        },
+        "part_info": {
+          "datasheet_url": "string",
+          "description": "string",
+          "is_support": true,
+          "manufacturer": "string",
+          "mouser_url": "string",
+          "part_id": "string",
+          "part_img": "string",
+          "part_name": "string",
+          "quantity_prices": [
+            {
+              "price": 0,
+              "quantity": 0
+            }
+          ],
+          "stock": 0
+        }
+      }
+    ],
+    "deleted_block_ids": ["string"]
+  },
+  "part_init": [
+    {
+      "BlockInfo": {
+        "block_id": "1",
+        "category": "input",
+        "display_option": "string",
+        "is_sub": true,
+        "seleted_option": {
+          "additionalProp1": "string",
+          "additionalProp2": "string",
+          "additionalProp3": "string"
+        },
+        "type": "switch"
+      },
+      "part_info": {
+        "datasheet_url": "string",
+        "description": "string",
+        "is_support": true,
+        "manufacturer": "string",
+        "mouser_url": "string",
+        "part_id": "string",
+        "part_img": "string",
+        "part_name": "string",
+        "quantity_prices": [
+          {
+            "price": 0,
+            "quantity": 0
+          }
+        ],
+        "stock": 20
+      }
+    },
+    {
+      "BlockInfo": {
+        "block_id": "2",
+        "category": "output",
+        "display_option": "string",
+        "is_sub": true,
+        "seleted_option": {
+          "additionalProp1": "string",
+          "additionalProp2": "string",
+          "additionalProp3": "string"
+        },
+        "type": "bluetooth"
+      },
+      "part_info": {
+        "datasheet_url": "string",
+        "description": "string",
+        "is_support": true,
+        "manufacturer": "string",
+        "mouser_url": "string",
+        "part_id": "string",
+        "part_img": "string",
+        "part_name": "string",
+        "quantity_prices": [
+          {
+            "price": 0,
+            "quantity": 0
+          }
+        ],
+        "stock": 30
+      }
+    },
+    {
+      "BlockInfo": {
+        "block_id": "3",
+        "category": "input",
+        "display_option": "string",
+        "is_sub": true,
+        "seleted_option": {
+          "additionalProp1": "string",
+          "additionalProp2": "string",
+          "additionalProp3": "string"
+        },
+        "type": "switch"
+      },
+      "part_info": {
+        "datasheet_url": "string",
+        "description": "string",
+        "is_support": false,
+        "manufacturer": "string",
+        "mouser_url": "string",
+        "part_id": "string",
+        "part_img": "string",
+        "part_name": "string",
+        "quantity_prices": [
+          {
+            "price": 0,
+            "quantity": 0
+          }
+        ],
+        "stock": 20
+      }
+    }
+  ],
+  "part_mouserurl": {
+    "mouser_url": "string"
+  },
+  "part_next": [
+    {
+      "block_id": "string",
+      "part_id": "string",
+      "type": "string"
+    }
+  ],
+  "part_save": {
+    "message": "success"
+  },
+  "part_search": [
+    {
+      "datasheet_url": "string",
+      "description": "string",
+      "is_support": true,
+      "manufacturer": "string",
+      "mouser_url": "string",
+      "part_id": "string",
+      "part_img": "string",
+      "part_name": "string",
+      "quantity_prices": [
+        {
+          "price": 0,
+          "quantity": 0
+        }
+      ],
+      "stock": 0
+    }
+  ],
+  "part_update": [
+    {
+      "datasheet_url": "string",
+      "description": "string",
+      "is_support": true,
+      "manufacturer": "string",
+      "mouser_url": "string",
+      "part_id": "string",
+      "part_img": "string",
+      "part_name": "string",
+      "quantity_prices": [
+        {
+          "price": 0,
+          "quantity": 0
+        }
+      ],
+      "stock": 0
+    }
+  ],
+  "project": {
+    "projectID": 15,
+    "userID": 0,
+    "teamID": 0,
+    "title": "팀 123",
+    "project_image": "",
+    "owner": "아라",
+    "created_at": "2023-11-02T01:25:40Z",
+    "updated_at": "2023-11-02T01:25:40Z"
+  },
+  "project_clone": {
+    "clone_title": "string",
+    "created_at": "2023-11-10T02:30:30Z",
+    "owner": "string",
+    "projectID": 0,
+    "project_image": "string",
+    "teamID": 0,
+    "updated_at": "2023-11-10T02:30:30Z",
+    "userID": 0
+  },
+  "project_list": [
+    {
+      "projectID": 15,
+      "userID": 0,
+      "teamID": 0,
+      "title": "팀 123",
+      "project_image": "",
+      "owner": "아라",
+      "created_at": "2023-11-02T01:25:40Z",
+      "updated_at": "2023-11-02T01:25:40Z"
+    },
+    {
+      "projectID": 18,
+      "userID": 0,
+      "teamID": 0,
+      "title": "팀 1234",
+      "project_image": "",
+      "owner": "아라",
+      "created_at": "2023-11-02T02:10:36Z",
+      "updated_at": "2023-11-02T02:10:36Z"
+    },
+    {
+      "projectID": 19,
+      "userID": 0,
+      "teamID": 0,
+      "title": "프로젝트1",
+      "project_image": "",
+      "owner": "아라",
+      "created_at": "2023-11-02T04:38:27Z",
+      "updated_at": "2023-11-02T04:38:27Z"
+    },
+    {
+      "projectID": 20,
+      "userID": 0,
+      "teamID": 0,
+      "title": "sd2222",
+      "project_image": "",
+      "owner": "아라",
+      "created_at": "2023-11-02T09:34:25Z",
+      "updated_at": "2023-11-02T09:34:25Z"
+    },
+    {
+      "projectID": 21,
+      "userID": 0,
+      "teamID": 0,
+      "title": "sd2asd2222",
+      "project_image": "",
+      "owner": "아라",
+      "created_at": "2023-11-02T09:53:52Z",
+      "updated_at": "2023-11-02T09:53:52Z"
+    }
+  ],
+  "project_new": {
+    "message": "success",
+    "projectID": 23
+  },
+  "project_progress": {
+    "message": "success",
+    "projectID": 23
+  },
+  "project_remove": {
+    "message": "success",
+    "projectID": 23
+  },
+  "project_share": {
+    "message": "success",
+    "new_projectID": 12,
+    "projectID": 23
+  },
+  "project_update": {
+    "message": "success",
+    "projectID": 23
+  },
+  "result_3dmodel": {
+    "model_image": "string"
+  },
+  "result_bom": {
+    "bom_image": "string"
+  },
+  "result_pcb": {
+    "board_image": "string"
+  },
+  "result_schema": {
+    "schematics_image": "string"
+  },
+  "search_user": {
+    "accountID": "abc1234",
+    "userID": 2
+  },
+  "teams_address": [
+    {
+      "addressID": 1,
+      "address_json_string": "string",
+      "address_name": "string",
+      "is_default": true,
+      "phone_number": "string",
+      "postal_code": 0,
+      "receiver": "string"
+    },
+    {
+      "addressID": 2,
+      "address_json_string": "string",
+      "address_name": "string",
+      "is_default": true,
+      "phone_number": "string",
+      "postal_code": 0,
+      "receiver": "string"
+    }
+  ],
+  "teams_address_edit": {
+    "addressID": 1,
+    "message": "success"
+  },
+  "teams_address_new": {
+    "addressID": 1,
+    "message": "success"
+  },
+  "teams_address_remove": {
+    "addressID": 1,
+    "message": "success"
+  },
+  "teams_members": [
+    {
+      "nickname": "손흥민",
+      "role": 1,
+      "userID": 38,
+      "user_email": "asd011@naver.com"
+    },
+    {
+      "nickname": "차범근",
+      "role": 2,
+      "userID": 39,
+      "user_email": "asd012@naver.com"
+    },
+    {
+      "nickname": "박지성",
+      "role": 2,
+      "userID": 40,
+      "user_email": "asd013@naver.com"
+    }
+  ],
+  "teams_auth": {
+    "message": "success"
+  },
+  "teams_invite": {
+    "message": "success"
+  },
+  "teams_delete": {
+    "message": "success"
+  },
+  "teams_new": {
+    "message": "success",
+    "teamID": 33
+  },
+  "teams_profile": {
+    "countrycode": "string",
+    "email": "string",
+    "email_opt_in": true,
+    "name": "string",
+    "phone_number": "string",
+    "phone_opt_in": true,
+    "team_img": "string"
+  },
+  "teams_profile_edit": {
+    "message": "success",
+    "teamID": 0
+  },
+  "teams_remove": {
+    "message": "success"
+  },
+  "users_address": [
+    {
+      "addressID": 1,
+      "address_json_string": "string",
+      "address_name": "string",
+      "is_default": true,
+      "phone_number": "string",
+      "postal_code": 0,
+      "receiver": "string"
+    }
+  ],
+  "users_address_edit": {
+    "addressID": 0,
+    "message": "success"
+  },
+  "users_address_new": {
+    "addressID": 0,
+    "message": "success"
+  },
+  "users_address_remove": {
+    "addressID": 0,
+    "message": "success"
+  },
+  "users_billing_edit": {
+    "card_token": ["string"]
+  },
+  "users_billing_new": {
+    "billingID": 0
+  },
+  "users_billing_remove": {
+    "billingID": 0
+  },
+  "users_info": {
+    "accountID": "string",
+    "countrycode": "string",
+    "email": "string",
+    "email_opt_in": true,
+    "nickname": "string",
+    "phone_number": "string",
+    "phone_opt_in": true,
+    "profile_image": "string",
+    "userID": 0,
+    "username": "string"
+  },
+  "users_profile": {
+    "accountID": "string",
+    "countrycode": "string",
+    "email": "string",
+    "email_opt_in": true,
+    "nickname": "string",
+    "phone_number": "string",
+    "phone_opt_in": true,
+    "profile_image": "string",
+    "userID": 0,
+    "username": "string"
+  },
+  "users_profile_change_pw": {
+    "message": "success",
+    "userID": 0
+  },
+  "users_profile_edit": {
+    "message": "success",
+    "userID": 0
+  },
+  "users_teams": [
+    {
+      "role": 1,
+      "teamID": 1,
+      "team_name": "team1",
+      "team_image": "",
+      "email": "team1@example.com",
+      "email_opt_in": false,
+      "countrycode": "82",
+      "phone_number": "010-1234-5678",
+      "phone_opt_in": false
+    },
+    {
+      "role": 2,
+      "teamID": 2,
+      "team_name": "team2",
+      "team_image": "",
+      "email": "team2@example.com",
+      "email_opt_in": false,
+      "countrycode": "82",
+      "phone_number": "010-1234-5678",
+      "phone_opt_in": false
+    }
+  ]
+}

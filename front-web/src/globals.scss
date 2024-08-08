@@ -1,0 +1,200 @@
+$general_basic_parimay: #45d6df;
+$general_basic_parimay_bg: #eafefe;
+$general_basic_sub: #1b3852;
+$general_background: #f0f0f0;
+$general_grid_line_1: #e5e5e5;
+$general_grid_line_2: #b5c6c7;
+
+$disabled_color: #a1a1a1;
+$disabled_border_color: #a1a1a1;
+$disabled_background: #eeeeee;
+
+$alert_success: #3cc800;
+$alert_info: #0078ff;
+$alert_warning: #ff9100;
+$alert_error: #e60000;
+$alert_update: #e60000;
+
+$feature_part_input: #1aa7ff;
+$feature_part_output: #ff785c;
+$feature_part_input_power: #595bfb;
+$feature_part_output_power: #f24463;
+$feature_part_communication: #ffc620;
+$feature_part_battery: #5ff053;
+$feature_basic_MCU: $general_basic_sub;
+$feature_basic_Power: $general_basic_parimay;
+
+$green_1: #00ca13;
+$green_2: #158d95;
+$red: #ee0000;
+$yellow: #ffc700;
+$blue: #0038ff;
+$blue_2: #004a85;
+$white_1: #ffffff;
+$white_2: #fafafa;
+$white_3: #ebebeb;
+$white_4: #faffff;
+$black_1: #000000;
+$black_2: #2a2a2a;
+$black_3: #333333;
+$black_4: #555555;
+$black_5: #4c4c4c;
+$matt_black: #222222;
+$gray_1: #7b7b7b;
+$gray_2: #a1a1a1;
+$gray_3: #959595;
+$gray_4: #dcdcdc;
+$gray_5: #d4d4d4;
+$gray_6: #999999;
+$gray_7: #888888;
+$gray_8: #f5f5f5;
+
+@mixin list_title {
+  font-family: Pretendard;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 12px;
+  color: $gray_1;
+}
+
+@mixin scrollbar {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray_3;
+    border: 2px solid $gray_3;
+    border-radius: 12px;
+  }
+  // &::-webkit-scrollbar-thumb:hover {
+  //   background-color: #fff;
+  // }
+}
+@mixin shadow1dp {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+@mixin shadow2dp {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
+}
+@mixin shadow3dp {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.18);
+}
+@mixin shadow4dp {
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.12);
+}
+@mixin shadow5dp {
+  box-shadow: 0 14px 24px 0 rgba(0, 0, 0, 0.1);
+}
+@mixin next_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: $general_basic_parimay;
+  border: 1px solid $general_basic_parimay;
+  color: $white_1;
+  &:hover {
+    background-color: #08c5d1;
+    color: $white_1;
+    border: 1px solid #08c5d1;
+  }
+  &:active {
+    background-color: $general_basic_sub;
+    border: 1px solid $general_basic_sub;
+    color: $white_1;
+  }
+  &:disabled {
+    background-color: $disabled_background;
+    color: $disabled_color;
+    border: 1px solid $disabled_border_color;
+    cursor: not-allowed;
+  }
+}
+
+@mixin general_basic_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $white_1;
+  border: 1px solid $general_basic_parimay;
+  color: $black_1;
+  cursor: pointer;
+  &:hover {
+    background-color: $white_1;
+    border: 1px solid $general_basic_parimay;
+    color: $general_basic_parimay;
+  }
+
+  &:active {
+    background-color: $general_basic_parimay;
+    border: 1px solid $general_basic_parimay;
+    color: $white_1;
+  }
+  &:disabled {
+    background-color: $disabled_background;
+    color: $disabled_color;
+    border: 1px solid $disabled_border_color;
+    cursor: not-allowed;
+  }
+}
+
+@mixin general_sub_button {
+  @include general_basic_button;
+  background-color: $general_basic_sub;
+  border: 1px solid $general_basic_sub;
+  color: $white_1;
+  &:hover {
+    background-color: $green_2;
+    border: 1px solid $green_2;
+    color: $white_1;
+  }
+  &:active {
+    background-color: $general_basic_parimay;
+    border: 1px solid $general_basic_parimay;
+    color: $white_1;
+  }
+}
+
+@mixin delete_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $white_1;
+  border: 1px solid $red;
+  color: $red;
+  cursor: pointer;
+  &:active {
+    background-color: $red;
+    border: 1px solid $red;
+    color: $white_1;
+  }
+}
+@mixin general_text_input {
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid $general_basic_sub;
+
+  &:focus {
+    border: 1px solid $general_basic_parimay;
+  }
+  &::placeholder {
+    color: $gray_2;
+  }
+}
+@mixin non_edit_input {
+  padding-left: 10px;
+  border-radius: 2px;
+  border: 1px solid $gray_4;
+  background-color: #fff;
+
+  cursor: not-allowed;
+}
+@mixin basic_radio_button {
+  background-color: $general_basic_parimay;
+  accent-color: $general_basic_parimay;
+}

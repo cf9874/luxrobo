@@ -1,0 +1,130 @@
+@import "globals";
+@mixin basic_font {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+.save_button_box {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  .save_button_text {
+    margin-top: 8px;
+    @include basic_font;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    text-align: center;
+    color: $black_5;
+  }
+}
+.container {
+  display: flex;
+  width: 98%;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px #b6b0b099;
+}
+.option_modal_container {
+  @include shadow2dp;
+  background-color: $white_1;
+  position: absolute;
+  width: 340px;
+  height: 750px;
+  left: 84px;
+  border-radius: 10px;
+}
+.setting_modal_container {
+  // border: 1px solid red;
+  background-color: #00000080;
+  @include shadow2dp;
+  // background-color: $white_1;
+  position: absolute;
+  top: 0;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  left: 84px;
+  // border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.cart_container {
+  .cart_wrapper {
+    width: 264px;
+    height: 800px;
+    background-color: $white_1;
+    border-radius: 16px;
+    .cart_title_wrapper {
+      height: 64px;
+      border-bottom: 1px solid $gray_1;
+      .cart_title {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: 0.6px;
+        color: $general_basic_sub;
+      }
+    }
+    .blocks_wrapper {
+      flex: row;
+      .blocks_box {
+        @include scrollbar;
+        height: 650px;
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 120px);
+        .block_box {
+          margin: 10px auto;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .button_wrapper {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid $general_grid_line_2;
+
+        .autoplacement_button {
+          @include general_sub_button;
+          width: 224px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .next_button {
+    margin-top: 12px;
+    button {
+      font-family: Pretendard;
+      width: 264px;
+      height: 52px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.63px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

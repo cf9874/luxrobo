@@ -1,0 +1,80 @@
+@import "globals";
+@mixin list_font {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  color: $black_3;
+}
+
+.order_status_title {
+  @include list_font;
+  font-size: 14px;
+  font-weight: 600;
+  color: $general_basic_sub;
+}
+.order_status_box {
+  height: 100%;
+  display: flex;
+  // justify-content: space-between;
+  padding-left: 60px;
+  align-items: center;
+  .order_bar_wrapper {
+    margin-right: 15px;
+  }
+  //status icon
+  .order_status_progress_box {
+    display: grid;
+    grid-template-rows: 1fr 12px;
+
+    .order_status_icon_done {
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: $general_basic_parimay;
+      border: 1px solid $general_basic_sub;
+    }
+    .order_status_icon_in_progress {
+      @extend .order_status_icon_done;
+      background-color: $white_1;
+      border: 1px solid $general_basic_parimay;
+    }
+    .order_status_icon_wait {
+      @extend .order_status_icon_done;
+      background-color: $white_1;
+      border: 1px solid $gray_2;
+    }
+
+    //status vertical bar
+    .order_status_icon_done_bar {
+      margin: 0 auto;
+      width: 1px;
+      height: 100%;
+      background-color: $general_basic_sub;
+    }
+    .order_status_icon_ready_bar {
+      @extend .order_status_icon_done_bar;
+      background-color: $gray_2;
+    }
+  }
+
+  //status description
+  .order_status_desc_box {
+    display: grid;
+    grid-template-rows: 1fr 12px;
+    .order_status_desc_done {
+      @include list_font;
+      font-size: 12px;
+      color: $black_3;
+      line-height: 1;
+    }
+    .order_status_desc_in_progress {
+      @extend .order_status_desc_done;
+      color: $general_basic_parimay;
+    }
+    .order_status_desc_wait {
+      @extend .order_status_desc_done;
+
+      color: $gray_2;
+    }
+  }
+}

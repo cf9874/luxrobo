@@ -1,0 +1,30 @@
+@import "globals";
+
+.menu_container {
+  width: 200px;
+  height: 190px;
+  border: solid 1px #c3c3c3;
+  background-color: $white_1;
+
+  .menu_row {
+    background-color: $white_1;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    .menu_title {
+      margin-left: 5px;
+    }
+    &:hover {
+      background-color: $general_basic_parimay_bg;
+    }
+  }
+  .menu_row:first-child {
+    border-bottom: solid 1px #c3c3c3;
+  }
+}
+.power_menu_container {
+  @extend .menu_container;
+  height: 150px;
+}

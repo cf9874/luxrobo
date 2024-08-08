@@ -1,0 +1,97 @@
+@import "globals";
+
+@mixin title_font {
+  font-family: Pretendard;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+.contents_container {
+  height: calc(100vh - 60px);
+  background-color: $white_2;
+  border-right: 1px solid $general_grid_line_2;
+  padding-left: 40px;
+  width: 100%;
+
+  .content_main_title {
+    margin: 24px 40px 24px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $general_basic_sub;
+    div:first-child {
+      @include title_font;
+      font-size: 28px;
+      margin-right: 8px;
+    }
+    div:last-child {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      color: $general_basic_sub;
+    }
+  }
+  .setting_detail_title {
+    div {
+      @include title_font;
+      font-size: 24px;
+      margin: 24px 40px 24px 0;
+    }
+  }
+  .member_control_button_group {
+    width: 1120px;
+    button {
+      @include general_basic_button;
+      margin-right: 12px;
+      width: 160px;
+      height: 40px;
+    }
+  }
+  .member_list_nav {
+    width: 1120px;
+    height: 48px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    margin: 24px 0 12px 0;
+    background-color: $black_4;
+    border-radius: 5px;
+    .member_list_nav_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white_1;
+      margin: 8px 0;
+      border-right: 1px solid $gray_6;
+      .row_sort {
+        cursor: pointer;
+        margin-left: 4px;
+      }
+    }
+    .member_list_nav_item:last-child {
+      border: none;
+    }
+  }
+  .member_list_wrapper {
+    @include scrollbar;
+    height: 540px;
+  }
+  .member_list {
+    width: 1120px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    border: 1px solid $gray_5;
+    background-color: $white_1;
+    border-radius: 5px;
+    .member_list_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}

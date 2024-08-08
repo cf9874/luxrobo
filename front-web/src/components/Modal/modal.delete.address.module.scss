@@ -1,0 +1,35 @@
+@import "globals";
+
+@mixin basic_font {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+.address_wrapper {
+  align-items: flex-start;
+  margin-left: 20px;
+
+  .address_home_icon {
+    margin-right: 10px;
+  }
+  .address_username {
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 600;
+    color: $black_3;
+    margin-right: 8px;
+  }
+  .address_user_number {
+  }
+  .address_address {
+    letter-spacing: 0;
+    font-family: Pretendard;
+    font-size: 14px;
+  }
+}

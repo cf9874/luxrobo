@@ -1,0 +1,398 @@
+@import "globals";
+
+@mixin title_font {
+  font-family: Pretendard;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+@mixin list_font {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: normal;
+  color: $black_3;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  .contents_container {
+    height: calc(100vh - 60px);
+    background-color: $white_2;
+    border-right: 1px solid $general_grid_line_2;
+
+    .content_main_title_box {
+      margin: 24px 40px;
+      padding-bottom: 12px;
+
+      border-bottom: 1px solid $general_basic_sub;
+      .content_main_title {
+        @include title_font;
+        font-size: 28px;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        color: $general_basic_sub;
+      }
+      .content_subtitle {
+        @include title_font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: 0.2px;
+      }
+    }
+    .subtitle {
+      @include title_font;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+      margin-bottom: 12px;
+    }
+    .contents_wrapper {
+      width: 100%;
+      @include scrollbar;
+      height: calc(100vh - 180px);
+      padding: 0 40px;
+    }
+    .project_name {
+      @include title_font;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+    }
+    .order_info_box,
+    .order_option_box {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      .item_title {
+        @include list_font;
+        font-size: 20px;
+      }
+      .item_content {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .order_info_box {
+      margin: 20px 0;
+      .order_info_item_box {
+        display: flex;
+        flex-direction: column;
+        .order_info_item {
+          justify-content: space-between;
+        }
+      }
+    }
+    .order_option_box {
+      .order_option_item_box {
+        display: flex;
+        flex-direction: column;
+        .order_option_item {
+          justify-content: space-between;
+        }
+      }
+      .order_option_item_box:first-child {
+        padding-right: 40px;
+      }
+      .order_option_item_box:nth-child(2) {
+        border-left: 1px solid black;
+        padding: 0 40px;
+      }
+    }
+    .order_price_box {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr auto) 1fr 1fr;
+      .order_price_item {
+        min-width: 200px;
+        .price_title {
+          @include list_font;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 1.25;
+          letter-spacing: 0.5px;
+          color: $black_3;
+        }
+        .price_amount {
+          @include list_font;
+          margin-top: 4px;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 1;
+          letter-spacing: 1px;
+          color: $general_basic_sub;
+        }
+        .price_result {
+          @include list_font;
+          margin-top: 4px;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1;
+          color: $general_basic_parimay;
+        }
+      }
+    }
+    .order_status_box {
+      .order_status_nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1.419fr 1fr;
+        margin: 24px 0;
+        .order_status_nav_item_done {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          border-radius: 20px;
+          border: 1px solid $general_basic_sub;
+        }
+        .order_status_nav_item_in_progress {
+          @extend .order_status_nav_item_done;
+          border: 1px solid $general_basic_parimay;
+          color: $general_basic_sub;
+        }
+        .order_status_nav_item_wait {
+          @extend .order_status_nav_item_done;
+          border: 1px solid $gray_5;
+          color: $gray_5;
+        }
+      }
+      .order_status_nav_with_WORK {
+        @extend .order_status_nav;
+        grid-template-columns: 1fr 1fr 0.7fr 1fr;
+      }
+      .order_status_nav_with_WORK_SMT {
+        @extend .order_status_nav;
+        grid-template-columns: 1fr 1.419fr 0.7fr 1fr;
+      }
+      .order_progress_bar {
+        // 9
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 20px 1fr) 20px;
+        padding: 0 40px;
+      }
+      .order_progress_bar_with_WORK {
+        // 11
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 20px 1fr) 20px;
+        padding: 0 40px;
+      }
+      .order_progress_bar_with_SMT {
+        // 10
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(9, 20px 1fr) 20px;
+        padding: 0 40px;
+      }
+      .order_progress_bar_with_WORKandSMT {
+        // 12
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(11, 20px 1fr) 20px;
+        padding: 0 40px;
+      }
+
+      .order_progress_status {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        .order_progress_desc {
+          margin-top: 12px;
+          margin-bottom: 24px;
+          width: 100px;
+          text-align: center;
+        }
+      }
+      .order_tracking_button {
+        @include general_basic_button;
+        width: 200px;
+        height: 40px;
+      }
+      .status_line_done {
+        height: 1px;
+        width: 100%;
+        background-color: $general_basic_sub;
+      }
+      .status_line_wait {
+        @extend .status_line_done;
+        background-color: $gray_2;
+      }
+      .status_line_blank {
+        @extend .status_line_done;
+        background-color: $white_2;
+      }
+      .status_icon_done {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $general_basic_sub;
+        background-color: $general_basic_parimay;
+        border-radius: 10px;
+      }
+      .status_icon_in_progress {
+        @extend .status_icon_done;
+        border: 1px solid $general_basic_parimay;
+        background-color: $white_1;
+      }
+      .status_icon_wait {
+        @extend .status_icon_done;
+        border: 1px solid $gray_2;
+        background-color: $white_1;
+      }
+    }
+    .order_address_box,
+    .order_payment_box {
+      border: 1px solid $gray_5;
+      width: 600px;
+      height: 96px;
+      border-radius: 2px;
+      padding: 24px;
+    }
+    .order_address_box {
+      margin-top: 12px;
+
+      .order_address_contents {
+        align-items: flex-start;
+      }
+      .address_name {
+        @include list_font;
+        margin-right: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+      }
+      .address_number {
+        @include list_font;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.4px;
+      }
+      .address {
+        margin-top: 12px;
+        @include list_font;
+        font-family: Pretendard;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0.5px;
+      }
+    }
+    .order_payment_box {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 12px;
+      .card_image {
+        width: 68px;
+        height: 42px;
+        border: 1px solid #eaeaea;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card_company {
+        margin-left: 12px;
+
+        @include list_font;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.4px;
+        color: black_4;
+      }
+      .card_name {
+        margin-left: 12px;
+        @include list_font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        color: $general_basic_sub;
+      }
+      .card_info {
+        height: 100%;
+        padding-left: 12px;
+        border-left: 1px solid $gray_2;
+        @include list_font;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 1px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  margin: 24px 0;
+  width: 100%;
+  background-color: $gray_5;
+}
+.divider_vertical {
+  width: 1px;
+  margin: 0 40px;
+  height: 100%;
+  background-color: $gray_5;
+}
+.divider_vertical_blank {
+  width: 1px;
+  margin: 0 40px;
+  height: 100%;
+  background-color: $white_2;
+}
+.divider_plus,
+.divider_result {
+  padding: 0 60px;
+  font-size: 24px;
+}
+.tracking_info_wrapper {
+  padding: 0 80px;
+  margin-bottom: 400px;
+
+  .tracking_info {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+
+    .tracking_info_title {
+      @include list_font;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.5px;
+    }
+
+    .tracking_info_content {
+      @include list_font;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: $general_basic_sub;
+    }
+  }
+  .tracking_detail {
+    width: 266px;
+    height: 400px;
+    border: 1px solid $general_basic_sub;
+    border-radius: 5px;
+  }
+  .tracking_divider {
+    height: 1px;
+    width: 100%;
+    background-color: $gray_5;
+    margin: 25px 0;
+  }
+}

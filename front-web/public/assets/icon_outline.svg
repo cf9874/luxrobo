@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="riw27bupva" d="M0 0h16v16H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h24v24H0z"/>
+        <g transform="translate(4 4)">
+            <mask id="xey2ha8ffb" fill="#fff">
+                <use xlink:href="#riw27bupva"/>
+            </mask>
+            <path d="M13.273 12h-.95a.323.323 0 0 0-.323.322v.951H4v-.951A.322.322 0 0 0 3.678 12h-.95V4h.95A.322.322 0 0 0 4 3.678v-.951h8v.951c0 .178.145.322.323.322h.95v8zm1.227 2.383v.117h-1v-1h1v.883zM2.5 2.5h-1v-1h1v1zm0 12h-1v-1h1v1zm12-13v1h-1v-1h1zM15.678 4A.322.322 0 0 0 16 3.678V.322A.322.322 0 0 0 15.678 0h-3.355A.323.323 0 0 0 12 .322v.905H4V.322A.322.322 0 0 0 3.678 0H.323A.323.323 0 0 0 0 .322v3.356C0 3.856.145 4 .323 4h.905v8H.323a.323.323 0 0 0-.323.322v3.356c0 .178.145.322.323.322h3.355A.322.322 0 0 0 4 15.678v-.905h8v.905c0 .178.145.322.323.322h3.355a.322.322 0 0 0 .322-.322v-3.356a.322.322 0 0 0-.322-.322h-.905V4h.905z" fill="#4C4C4C" mask="url(#xey2ha8ffb)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,469 @@
+@import "globals";
+
+@mixin title_font {
+  font-family: Pretendard;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 4fr;
+}
+
+.contents_container {
+  height: calc(100vh - 60px);
+  background-color: $white_2;
+  border-right: 1px solid $general_grid_line_2;
+  .content_main_title {
+    margin: 24px 40px 0 40px;
+
+    div:first-child {
+      @include title_font;
+      font-size: 28px;
+      margin-right: 8px;
+    }
+    div:last-child {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      color: $general_basic_sub;
+    }
+  }
+}
+
+.setting_tabs {
+  margin-left: 40px;
+  color: $general_basic_sub;
+}
+.setting_title {
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 600;
+  color: $general_basic_sub;
+  margin-bottom: 20px;
+}
+/* Profile */
+.profile_img {
+  margin-left: 60px;
+  width: 160px;
+  height: 160px;
+  border: 1.5px solid $general_basic_sub;
+  border-radius: 50%;
+  .empty_img {
+    font-size: 40px;
+    font-weight: 100;
+  }
+}
+.setting_profile_data_container {
+  padding-left: 60px;
+  border-bottom: 1px solid $gray_5;
+  .setting_profile_data_row {
+    margin: 5px 0;
+    .setting_profile_data_title {
+      width: 170px;
+      font-size: 20px;
+      font-weight: 500;
+      color: $black_3;
+    }
+
+    .non_edit_input {
+      @include non_edit_input;
+      width: 200px;
+      height: 24px;
+    }
+
+    .setting_profile {
+      @include general_text_input;
+      width: 200px;
+      height: 24px;
+      border-radius: 2px;
+    }
+  }
+}
+
+.setting_profile_delete_team {
+  margin-left: 60px;
+  padding: 10px 0;
+  .setting_profile_data_title {
+    font-family: Pretendard;
+    width: 170px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $black_3;
+  }
+  .delete_info {
+    font-family: Pretendard;
+    font-size: 16px;
+    color: $black_3;
+  }
+  .button_delete_team {
+    @include delete_button;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+  }
+}
+/* Address */
+
+.address_list {
+  @include scrollbar;
+
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: calc(100vh - 300px);
+}
+.address_container {
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 800px;
+  height: 96px;
+  border: solid 1px #d4d4d4;
+  border-radius: 5px;
+  background-color: #fff;
+  .address_item {
+    width: 100%;
+    height: 100%;
+    padding: 12px 12px 24px 24px;
+    justify-content: space-between;
+    padding-right: 0;
+    .address_username {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 600;
+      color: $black_3;
+      .address_home_icon {
+        margin-right: 10px;
+      }
+    }
+    .address_address {
+      margin-left: 20px;
+      letter-spacing: 0;
+      font-family: Pretendard;
+      font-size: 16px;
+    }
+    .edit_button_wrapper {
+      height: 100%;
+      margin-top: 10px;
+    }
+    .edit_button {
+      @include general_basic_button;
+      width: 106px;
+      height: 40px;
+    }
+    .delete_icon {
+      width: 100%;
+      height: 96px;
+      padding-top: 20px;
+      margin-right: 10px;
+      &:hover {
+        color: $general_basic_parimay;
+      }
+    }
+  }
+}
+.add_address_button {
+  @include general_basic_button;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 40px;
+  border: solid 1px #d4d4d4;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.new_address {
+  width: 800px;
+  height: 568px;
+  border: 1px solid red;
+  margin-left: 60px;
+  padding: 24px;
+  border-radius: 5px;
+  border: 1px solid $general_basic_sub;
+  background-color: #fff;
+  .address_title {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: $black_3;
+  }
+
+  .add_address_input_wrapper {
+    margin-top: 20px;
+
+    .add_address_input_label {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: #333;
+      width: 100%;
+    }
+    .add_address_input {
+      @include general_text_input;
+      width: 100%;
+      height: 24px;
+      padding-left: 12px;
+      padding-right: 50px;
+      margin: 10px 0;
+    }
+  }
+  .set_default_address {
+    @include basic_radio_button;
+    width: 30px;
+    height: 30px;
+  }
+  .address_button_wrapper {
+    width: 100%;
+    justify-content: center;
+    .add_address_cancel_button,
+    .add_address_save_button {
+      @include general_basic_button;
+      margin: 0 10px;
+    }
+  }
+}
+/* Billing */
+.payment_card_list {
+  @include scrollbar;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: calc(100vh - 470px);
+  width: 868px;
+}
+.billing_summary_container {
+  flex-direction: column;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $gray_5;
+  .billing_summary_wrapper {
+    width: 100%;
+    padding-left: 60px;
+    .monthly_bill_box {
+      padding: 24px;
+      border: 1px solid $gray_5;
+      border-radius: 5px;
+      width: 388px;
+      height: 120px;
+      .current_bill_title,
+      .next_bill_title {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-weight: 500;
+        color: $black_3;
+      }
+      .current_bill_amount {
+        font-family: Pretendard;
+        font-size: 40px;
+        color: $general_basic_sub;
+      }
+      .next_bill_amount {
+        @extend .current_bill_amount;
+        color: $general_basic_parimay;
+      }
+    }
+  }
+}
+
+.payment_cards_container {
+  flex-direction: column;
+  margin: 0 60px;
+
+  .payment_card {
+    width: 800px;
+    height: 90px;
+    border: 1px solid $gray_5;
+    background-color: $white_1;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 7fr 7fr 6fr;
+    padding: 12px 24px;
+    .payment_card_name_wrapper {
+      border-right: 1px solid $gray_5;
+      padding: 12px 0;
+      .payment_card_img {
+        width: 68px;
+        height: 42px;
+        border: 1px solid $gray_5;
+        border-radius: 5px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 24px;
+      }
+      .payment_card_name_box {
+        .card_company {
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 0.4px;
+          color: $black_4;
+        }
+        .card_name,
+        .card_name_edit {
+          font-family: Pretendard;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1;
+          letter-spacing: 0.5px;
+        }
+        .card_name_edit {
+          margin-left: 10px;
+        }
+      }
+    }
+    .billing_card_number {
+      margin-left: 24px;
+      font-family: Pretendard;
+      font-size: 16px;
+
+      line-height: 1;
+      letter-spacing: 1px;
+      color: #333;
+    }
+    .delete_card {
+      &:hover {
+        color: $general_basic_parimay;
+      }
+    }
+  }
+  .add_card_button {
+    @include general_basic_button;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 40px;
+    border: solid 1px #d4d4d4;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .new_card {
+    width: 800px;
+    height: 568px;
+    border: 1px solid red;
+    padding: 24px 40px;
+    border-radius: 5px;
+    border: 1px solid $general_basic_sub;
+    background-color: #fff;
+    .add_card_title {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      color: $black_3;
+    }
+    .card_type_list {
+      margin-left: 10px;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 68px;
+        height: 42px;
+        border: 1px solid $gray_5;
+        border-radius: 5px;
+        margin: 20px 6px;
+      }
+    }
+    .select_card_type_radio_group {
+      display: flex;
+      flex-direction: column;
+    }
+    .add_card_input_wrapper {
+      margin-top: 20px;
+
+      .add_card_input_label {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        color: #333;
+        width: 100%;
+      }
+      .add_card_input {
+        @include general_text_input;
+
+        width: 720px;
+        height: 24px;
+        padding-left: 12px;
+        padding-right: 50px;
+        margin: 10px 0;
+      }
+      .add_card_input_short {
+        @include general_text_input;
+        width: 350px;
+        height: 24px;
+        padding-left: 12px;
+        padding-right: 50px;
+        margin: 10px 0;
+      }
+    }
+    .set_default_address {
+      @include basic_radio_button;
+      width: 30px;
+      height: 30px;
+    }
+    .card_button_wrapper {
+      width: 100%;
+      justify-content: center;
+      .add_card_cancel_button,
+      .add_card_save_button {
+        @include general_basic_button;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+/* Teams */
+.teams_table_nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 5fr;
+  width: 800px;
+  height: 40px;
+  background-color: $black_4;
+  border-radius: 5px;
+  color: $white_1;
+  .teams_table_nav_item {
+    display: flex;
+    margin: 8px 0;
+    border-right: 1px solid $gray_6;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.teams_table_list {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 5fr;
+  width: 800px;
+  height: 64px;
+  border: 1px solid $gray_5;
+  border-radius: 5px;
+  margin: 12px 0;
+  background-color: $white_1;
+  .teams_table_list_item {
+    display: flex;
+    margin: 8px 0;
+    justify-content: center;
+    align-items: center;
+    button {
+      @include general_basic_button;
+      margin: 0px 12px;
+    }
+  }
+}

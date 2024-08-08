@@ -1,0 +1,39 @@
+@import "globals";
+
+/* checkBox*/
+.checkBox {
+  padding-left: 5px;
+  border-radius: 20px;
+  border: 1px solid #d4d4d4;
+  margin: 0 10px;
+  &:hover {
+    border: 1px solid #45d6df;
+    color: #45d6df;
+  }
+}
+
+.checkBox_selected {
+  @extend .checkBox;
+  border: 1px solid $general_basic_sub;
+  border-radius: 20px;
+}
+// color checkbox
+.color_checkBox {
+  @extend .checkBox;
+}
+.color_checkBox_selected {
+  @extend .checkBox_selected;
+}
+.color_checkBox_selected_white {
+  @extend .color_checkBox_selected;
+
+  span {
+    span {
+      &::after {
+        border: 2px solid $black_1 !important;
+        border-top: 0 !important;
+        border-left: 0 !important;
+      }
+    }
+  }
+}

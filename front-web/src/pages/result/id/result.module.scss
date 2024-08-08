@@ -1,0 +1,173 @@
+@import "globals";
+
+@mixin title_font {
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $white_1;
+}
+@mixin list_font {
+  @include title_font;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.42px;
+  color: $black_3;
+}
+
+.main {
+  height: 90vh;
+  width: 97.3%; // sub없을 때
+  background-color: #fff;
+  margin: 0 auto;
+
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px #b6b0b099;
+
+  & [class="ant-tabs-nav"] {
+    margin-bottom: 0;
+  }
+}
+.tabs {
+  height: 60px;
+  margin-top: 9px;
+}
+.tab_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.tabs_icon_wrapper {
+  margin-left: 20px;
+  height: 40px;
+  display: flex;
+  .tabs_icon {
+    background-color: $general_basic_sub;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+.title {
+  font-size: 24px;
+  margin: 0 20px 0 12px;
+}
+.result_wrapper {
+  height: calc(90vh - 60px);
+  border-top: 1px solid $general_grid_line_2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #fff;
+  .slider {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+}
+.result_wrapper_BOM {
+  @extend .result_wrapper;
+  border-top: none;
+  background-color: #fff;
+  width: 75%;
+
+  .BOM_table_nav {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 2.2fr 3.2fr 1.8fr 1.6fr 1.8fr 1.8fr;
+    margin: 0 50px;
+    height: 48px;
+    align-items: center;
+    background-color: $general_basic_sub;
+    .BOM_table_title {
+      margin: 12px 0;
+      @include title_font;
+      color: $white_1;
+      padding: 0 24px;
+      border-right: 1px solid $white_1;
+    }
+    .BOM_table_title:last-child {
+      border: none;
+    }
+  }
+  .BOM_table_data {
+    display: grid;
+    grid-template-columns: 2.2fr 3.2fr 1.8fr 1.6fr 1.8fr 1.8fr;
+    border: 1px solid $general_basic_sub;
+    border-top: none;
+    margin: 0 50px;
+    .BOM_table_data_item {
+      @include list_font;
+
+      display: flex;
+      align-items: center;
+      padding: 20px 24px;
+      border-right: 1px solid $general_basic_sub;
+    }
+    .BOM_table_data_item:last-child {
+      border-right: none;
+    }
+  }
+}
+.right_element {
+  display: flex;
+  align-items: center;
+  .progress_box {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    .progress_text {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      color: $general_basic_parimay;
+    }
+    .progress_text_success {
+      @extend .progress_text;
+      color: $alert_success;
+    }
+  }
+  .download_button {
+    @include general_sub_button;
+    width: 148px;
+    height: 40px;
+    margin-right: 20px;
+    @include list_font;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    .download_icon {
+      margin-right: 5px;
+    }
+  }
+}
+.image_wrapper {
+  padding: 10px 0;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include scrollbar;
+}
+.document_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next_button_box {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+  cursor: pointer;
+  @include next_button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+}

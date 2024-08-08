@@ -1,0 +1,80 @@
+@import "globals";
+
+@mixin text_button {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  border: 1px solid $gray_4;
+  background-color: $white_1;
+  text-align: center;
+}
+@mixin select_box {
+  appearance: none;
+  padding-left: 4px;
+  height: 24px;
+  background: url("../../assets/image/icon-down.png") no-repeat right 0px center;
+  background-size: 24px;
+}
+.container {
+  @include shadow3dp;
+  width: 172px;
+  height: 136px;
+  padding: 12px;
+  border-radius: 2px;
+  background-color: $white_1;
+  .select_wrapper {
+    display: flex;
+    gap: 4px;
+    .select_font {
+      width: 92px;
+      @include select_box;
+    }
+    .select_font_size {
+      width: 52px;
+      @include select_box;
+    }
+  }
+  .button_wrapper {
+    display: flex;
+    gap: 4px;
+    margin: 8px 0;
+    .bold {
+      @include text_button;
+      font-weight: bold;
+    }
+    .bold_select {
+      @include text_button;
+      font-weight: bold;
+      background-color:bisque;
+    }
+    .italic {
+      @include text_button;
+      font-style: italic;
+    }
+    .italic_select {
+      @include text_button;
+      font-style: italic;
+      background-color:bisque;
+    }
+    .underline {
+      @include text_button;
+      text-decoration: underline;
+    }
+    .underline_select {
+      @include text_button;
+      text-decoration: underline;
+      background-color:bisque;
+    }
+  }
+  .textarea {
+    // display: flex;
+    // width: 600px;
+    // height: 320px;
+    // font-weight: 500;
+    // font-family: Pretendard;
+    // color: $general_basic_sub;
+    width: 148px;
+    height: 48px;
+    resize: none;
+  }
+}

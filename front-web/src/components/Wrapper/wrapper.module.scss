@@ -1,0 +1,47 @@
+@import "globals";
+
+.button_container_logic {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  right: 25px;
+  margin-top: 24px;
+  .add_custom_button {
+    @include shadow2dp;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    &:disabled {
+      color: $gray_2;
+      cursor: not-allowed;
+      &:hover {
+        background-color: $white_1;
+        color: $gray_2;
+      }
+      &:active {
+        background-color: $white_1;
+        color: $gray_2;
+      }
+    }
+    &:hover {
+      background-color: $general_basic_parimay_bg;
+      color: $general_basic_parimay;
+    }
+    &:active {
+      background-color: $general_basic_parimay;
+      color: $white_1;
+    }
+  }
+}
+.button_container_layout {
+  @extend .button_container_logic;
+  right: 325px;
+}

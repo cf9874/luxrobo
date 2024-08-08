@@ -1,0 +1,22 @@
+[
+  {
+    "title": "선택해주세요.",
+    "key": "DEFAULT"
+  },
+  {
+    "title": "프로젝트 관련",
+    "key": "PROJECT"
+  },
+  {
+    "title": "오류 / 버그",
+    "key": "ERROR_OR_BUG"
+  },
+  {
+    "title": "주문 / 배송",
+    "key": "ORDER_OR_DELIEVER"
+  },
+  {
+    "title": "기타",
+    "key": "ETC"
+  }
+]

@@ -1,0 +1,14 @@
+@import "globals";
+
+.general_basic_button {
+  @include general_basic_button;
+}
+.general_sub_button {
+  @include general_sub_button;
+}
+.delete_button {
+  @include delete_button;
+}
+.next_button {
+  @include next_button;
+}

@@ -1,0 +1,102 @@
+@import "globals";
+
+@mixin basic_font {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: $general_basic_sub;
+}
+
+// modal.open.block
+.open_custom_block_wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+  .open_custom_block_wrapper_nav_text {
+    width: 100%;
+  }
+  .divider {
+    height: 1px;
+    background-color: #dcdcdc;
+    width: 100%;
+    margin-top: 24px;
+  }
+  .open_custom_block_wrapper_search_input_wrapper {
+    margin: 12px auto;
+    .plus_icon {
+      margin-left: 15px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .open_custom_block_wrapper_search_input {
+    }
+  }
+  .custom_block_list {
+    @include scrollbar;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 262px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #c3c3c3;
+    padding: 6px 0;
+    .custom_block_list_item {
+      cursor: pointer;
+      border: 1px solid #c3c3c3;
+      border-radius: 5px;
+      background-color: $white_1;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin: 6px auto;
+      .custom_block_name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #c3c3c3;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: $black_5;
+
+        width: 180px;
+      }
+      .custom_block_info_box {
+        width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 0 12px;
+        .custom_block_info {
+          margin-left: 12px;
+          font-size: 14px;
+          line-height: 1;
+          color: $black_5;
+        }
+      }
+    }
+    .custom_block_list_item_selected {
+      @extend .custom_block_list_item;
+      background-color: $general_basic_parimay_bg;
+    }
+    .value_dropdown {
+      width: 156px;
+    }
+    .unit_dropdown {
+      width: 84px;
+    }
+
+    .delete_icon {
+      cursor: pointer;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+  }
+}

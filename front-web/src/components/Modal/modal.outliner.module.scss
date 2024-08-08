@@ -1,0 +1,100 @@
+@import "globals";
+
+.container {
+  width: 324px;
+  height: 617px;
+  .title_wrapper {
+    width: 324px;
+    height: 50px;
+    background-color: $general_basic_sub;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 90px;
+    font-size: 18px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    .title {
+      display: inline-block;
+    }
+    .collapse_wrapper {
+      margin-left: 70px;
+      .collapse_img {
+        &:hover {
+          .collapse_path {
+            fill: $general_basic_parimay;
+          }
+        }
+      }
+    }
+  }
+  .title_wrapper_close {
+    @extend .title_wrapper;
+    border-radius: 9px;
+  }
+  .content_wrapper {
+    padding: 12px;
+    background-color: #fcfcfc;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    .content_nav {
+      width: 300px;
+      display: flex;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #1b3852;
+      .nav_item {
+        color: $general_basic_sub;
+      }
+    }
+    .content_row {
+      flex: row;
+      border-bottom: 1px;
+      margin-bottom: 15px;
+      margin-left: 4px;
+      align-items: center;
+      justify-content: center;
+      .row_index {
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        border-radius: 99px;
+        display: inline-block;
+        border: 2px solid #1b3852;
+        color: #1b3852;
+        font-weight: bold;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      .row_input {
+        width: 76px;
+        height: 28px;
+        margin-right: 10px;
+        border: solid 1px #e5e5e5;
+        border-radius: 5px;
+        text-align: center;
+        color: #1b3852;
+        font-size: 17px;
+      }
+    }
+  }
+  .import_button {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid $general_basic_sub;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:active {
+      color: white;
+      background-color: $general_basic_sub;
+    }
+  }
+}
+.hr {
+  background-color: #1b3852;
+  height: 2px;
+}
