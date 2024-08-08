@@ -1,0 +1,17 @@
+$headerHeight: 80px;
+$siderWidth: 250px;
+$profileWidth: 40px;
+$gapPixel: 5px;
+$contentHeight: calc(100vh - $headerHeight);
+$contentContainerHeight: calc($contentHeight - 2 * $gapPixel);
+$footerHeight: 105px;
+$containerMaxHeight: calc(100vh - $headerHeight - 2 * $gapPixel);
+$rightMaxWidth: calc(100vw - $siderWidth);
+$containerMaxWidth: calc(100vw - $siderWidth - 2 * $gapPixel);
+$footerContainerMaxHeight: calc(100vh - $headerHeight - 2 * $gapPixel - $footerHeight);
+// SearchBarBtn
+$minBtnWidth: 60px, 80px, 100px, 120px; // idx(max text) - 1, 2, 3, ... (20px) * (idx + 2)
+
+.descSection {
+  margin-bottom: 20px;
+}

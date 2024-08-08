@@ -1,0 +1,52 @@
+{
+  "workspace": [
+    {
+      "accountID": "string1",
+      "email": "string1",
+      "name": "string1",
+      "phone_number": "string1",
+      "userID": 1,
+      "teamID": 0
+    },
+    {
+      "accountID": "string2",
+      "email": "string2",
+      "name": "string2",
+      "phone_number": "string2",
+      "userID": 2,
+      "teamID": 0
+    },
+    {
+      "accountID": "string2",
+      "email": "string2",
+      "name": "string2",
+      "phone_number": "string2",
+      "userID": 3,
+      "teamID": 0
+    },
+    {
+      "accountID": "---",
+      "email": "string3",
+      "name": "string3",
+      "phone_number": "string3",
+      "userID": 0,
+      "teamID": 1
+    },
+    {
+      "accountID": "---",
+      "email": "string3",
+      "name": "string3",
+      "phone_number": "string3",
+      "userID": 0,
+      "teamID": 2
+    },
+    {
+      "accountID": "---",
+      "email": "string3",
+      "name": "string3",
+      "phone_number": "string3",
+      "userID": 0,
+      "teamID": 3
+    }
+  ]
+}

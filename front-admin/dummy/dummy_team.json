@@ -1,0 +1,118 @@
+{
+  "team": [
+    {
+      "teamID": 1,
+      "team_name": "Teamname1",
+      "email": "hong1@luxrobo.com",
+      "email_opt_in": true,
+      "countrycode": "+86",
+      "phone_number": "010-5213-2135",
+      "phone_opt_in": true,
+      "team_image": ""
+    },
+    {
+      "teamID": 2,
+      "team_name": "Luxrobo",
+      "email": "test1@luxrobo.com",
+      "email_opt_in": true,
+      "countrycode": "+86",
+      "phone_number": "010-3123-2134",
+      "phone_opt_in": true,
+      "team_image": ""
+    },
+    {
+      "teamID": 3,
+      "team_name": "RCClub",
+      "email": "test1@luxrobo.com",
+      "email_opt_in": true,
+      "countrycode": "+86",
+      "phone_number": "010-3123-2134",
+      "phone_opt_in": true,
+      "team_image": ""
+    }
+  ],
+  "team_info": {
+    "teamID": 1,
+    "team_name": "Teamname1",
+    "email": "hong1@luxrobo.com",
+    "email_opt_in": true,
+    "countrycode": "+86",
+    "phone_number": "010-5213-2135",
+    "phone_opt_in": true,
+    "team_image": ""
+  },
+  "team_address": [
+    {
+      "addressID": 1,
+      "address_name": "드림플러스",
+      "address_json_string": "13층(서울특별시 서초구 강남대로 311 (서초동, 한화생명보험빌딩))",
+      "is_default": false,
+      "phone_number": "010-5213-2135",
+      "postal_code": "06628",
+      "receiver": "홍길동"
+    },
+    {
+      "addressID": 2,
+      "address_name": "테스트",
+      "address_json_string": "13층(서울특별시 서초구 강남대로 311 (서초동, 한화생명보험빌딩))",
+      "is_default": false,
+      "phone_number": "010-5213-2135",
+      "postal_code": "06628",
+      "receiver": "홍길동"
+    }
+  ],
+  "team_credit": [
+    {
+      "creditID": 1,
+      "credit_name": "UserCard1",
+      "crdeit_number": "**** 1720"
+    },
+    {
+      "creditID": 2,
+      "credit_name": "VISA CARD",
+      "crdeit_number": "**** 9420"
+    }
+  ],
+  "team_project": [
+    {
+      "created_at": "string",
+      "owner": "string",
+      "projectID": 0,
+      "project_image": "string",
+      "teamID": 0,
+      "title": "string",
+      "updated_at": "string",
+      "userID": 0
+    }
+  ],
+  "team_customblock": [
+    {
+      "customblockID": 0,
+      "name": "string",
+      "updated_at": "string",
+      "teamID": 0,
+      "userID": 0,
+      "partID": 0,
+      "color": "string",
+      "specification": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "type": "string"
+    }
+  ],
+  "team_user": [
+    {
+      "countrycode": "string",
+      "email": "string",
+      "email_opt_in": true,
+      "phone_number": "string",
+      "phone_opt_in": true,
+      "role": 0,
+      "userID": 0,
+      "user_image": "string",
+      "user_name": "string"
+    }
+  ]
+}

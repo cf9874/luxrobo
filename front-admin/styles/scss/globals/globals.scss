@@ -1,0 +1,17 @@
+// const(variable)
+@import "./CSSconst.scss";
+
+// styles - component
+@import "./globals.button.scss";
+@import "./globals.input.scss";
+@import "./globals.select.scss";
+@import "./globals.table.scss";
+@import "./globals.checkbox.scss";
+@import "./globals.pagination.scss";
+@import "./globals.radio.scss";
+@import "./globals.sidebar.scss";
+
+// styles - page
+@import "./globals.page.index.scss";
+@import "./globals.page.new.scss";
+@import "./globals.page.detail.scss";

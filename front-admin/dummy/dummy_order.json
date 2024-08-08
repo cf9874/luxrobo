@@ -1,0 +1,150 @@
+{
+  "order": [
+    {
+      "id": 1,
+      "orderNumber": "202308121423",
+      "purchaseDate": "23.08.12 16:42",
+      "userId": 1,
+      "projectId": 1,
+      "shipId": 1,
+      "orderId": 2,
+      "quantity": 40,
+      "isSMT": true,
+      "isMovement": true,
+      "orderType": {
+        "boardType": "Single Pieces",
+        "thickness": 1.6,
+        "solderMask": "Green",
+        "silkScreens": "Black",
+        "surfaceFinish": "OSP",
+        "viaProcess": "Tenting Vias",
+        "finishedCopper": "1 oz",
+        "minHollSize": "0.3mm",
+        "minTrackSpacing": "6/6mil"
+      },
+      "price": {
+        "toolTotalPrice": 176500,
+        "ordererPrice": 200000,
+        "shipPrice": 15000,
+        "chargePrice": 5000
+      },
+      "shipmentId": 1,
+      "paymentId": 1
+    },
+    {
+      "id": 2,
+      "orderNumber": "202308065324",
+      "purchaseDate": "23.08.16 12:34",
+      "userId": 1,
+      "projectId": 2,
+      "shipId": 1,
+      "orderId": 2,
+      "quantity": 20,
+      "isSMT": true,
+      "isMovement": false,
+      "orderType": {
+        "boardType": "Single Pieces",
+        "thickness": 1.6,
+        "solderMask": "Green",
+        "silkScreens": "White",
+        "surfaceFinish": "HASL",
+        "viaProcess": "Tenting Vias",
+        "finishedCopper": "1 oz",
+        "minHollSize": "0.3mm",
+        "minTrackSpacing": "6/6mil"
+      },
+      "price": {
+        "toolTotalPrice": 176500,
+        "ordererPrice": 200000,
+        "shipPrice": 15000,
+        "chargePrice": 5000
+      },
+      "shipmentId": 2,
+      "paymentId": 1
+    },
+    {
+      "id": 3,
+      "orderNumber": "202308016362",
+      "purchaseDate": "23.08.01 19:25",
+      "userId": 1,
+      "projectId": 4,
+      "shipId": 1,
+      "orderId": 2,
+      "quantity": 20,
+      "isSMT": true,
+      "isMovement": false,
+      "orderType": {
+        "boardType": "Single Pieces",
+        "thickness": 1.6,
+        "solderMask": "Green",
+        "silkScreens": "White",
+        "surfaceFinish": "HASL",
+        "viaProcess": "Tenting Vias",
+        "finishedCopper": "1 oz",
+        "minHollSize": "0.3mm",
+        "minTrackSpacing": "6/6mil"
+      },
+      "price": {
+        "toolTotalPrice": 176500,
+        "ordererPrice": 200000,
+        "shipPrice": 15000,
+        "chargePrice": 5000
+      },
+      "shipmentId": 3,
+      "paymentId": 3
+    }
+  ],
+  "shipping": [
+    {
+      "id": 1,
+      "orderNumber": "202308121423",
+      "purchaseDate": "23.08.12 16:42",
+      "projectId": 1,
+      "userId": 1,
+      "purchaseId": 1
+    },
+    {
+      "id": 2,
+      "orderNumber": "202308065324",
+      "purchaseDate": "23.08.16 12:34",
+      "projectId": 2,
+      "userId": 1,
+      "purchaseId": 2
+    },
+    {
+      "id": 3,
+      "orderNumber": "202308016362",
+      "purchaseDate": "23.08.01 19:25",
+      "projectId": 2,
+      "userId": 1,
+      "purchaseId": 3
+    }
+  ],
+  "shipping_files": [{ "BOM": "", "Gerber": "" }],
+  "shipping_condition": {
+    "tool": {
+      "proceeding": true,
+      "step": "진행 중",
+      "progress": "부품 배송 중",
+      "parcel": "",
+      "parcelNum": ""
+    },
+    "circuit": {
+      "proceeding": false,
+      "step": "진행 전",
+      "progress": "회로 주문"
+    },
+    "movement": {
+      "proceeding": false,
+      "step": "진행 전",
+      "progress": "검사 진행"
+    },
+    "ship": {
+      "proceeding": false,
+      "step": "진행 전",
+      "progress": "배송 준비",
+      "parcel": "",
+      "parcelNum": ""
+    }
+  }
+}

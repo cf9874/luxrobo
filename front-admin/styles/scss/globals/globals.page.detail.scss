@@ -1,0 +1,169 @@
+.detail_container_global {
+  width: 100%;
+  height: 100%;
+}
+//------------------------------------------------------------------------------------
+.detail_table_container_global {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    width: 100%;
+  }
+
+  .detail_table_tableTitle_global {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detail_table_wrapper_global {
+    width: 100%;
+    margin: 10px 0;
+    & > div {
+      background-color: transparent;
+    }
+
+    .detail_table_nav_global {
+      // Row
+      background-color: transparent;
+      display: grid;
+      border-top: 1px solid rgba(5, 5, 5, 0.06);
+      border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+
+      .detail_table_title_global {
+        display: flex;
+        padding: 16px 24px;
+        //
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        font-weight: bold;
+        //
+        white-space: normal;
+        background-color: rgba(0, 0, 0, 0.02);
+
+        .detail_table_title_item_global {
+          display: inline-flex;
+          width: 100%;
+          min-height: 32px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .detail_table_empty_global {
+      padding: 50px 20px;
+      border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+    }
+
+    .detail_table_data_global {
+      background-color: transparent;
+      display: grid;
+      border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+
+      .detail_table_item_global {
+        display: flex;
+        padding: 16px 24px;
+        //
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        //
+        white-space: normal;
+        background-color: $white_basic;
+
+        .detail_table_item_value_global {
+          display: inline-flex;
+          width: 100%;
+          min-height: 32px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .detail_table_item_manage_global {
+    justify-content: space-around !important;
+  }
+}
+//------------------------------------------------------------------------------------
+.detail_description_container_global {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    width: 100%;
+  }
+
+  .detail_description_title_global {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detail_description_wrapper_global {
+    width: 100%;
+    margin: 10px 0;
+    background-color: transparent;
+
+    .detail_description_global {
+      background-color: $white_basic;
+
+      .detail_description_row_global {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr 0.8fr 1.2fr;
+        border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+        border-inline: 1px solid rgba(5, 5, 5, 0.06);
+
+        &:first-child {
+          border-top: 1px solid rgba(5, 5, 5, 0.06);
+        }
+
+        .detail_description_label_global {
+          display: flex;
+          box-sizing: content-box;
+          min-height: 32px;
+          padding: 16px 24px;
+          text-align: start;
+          align-items: center;
+          //
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 14px;
+          white-space: normal;
+          //
+          background-color: rgba(0, 0, 0, 0.02);
+          border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+        }
+
+        .detail_description_content_global {
+          display: flex;
+          box-sizing: content-box;
+          min-height: 32px;
+          padding: 16px 24px;
+          text-align: center;
+          align-items: center;
+          //
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 14px;
+          white-space: normal;
+          //
+          background-color: $white_basic;
+          border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+        }
+
+        & > div:last-child {
+          border-inline-end: none;
+        }
+      }
+
+      .detail_description_row_only_item_global {
+        grid-template-columns: 0.8fr 3.2fr;
+      }
+    }
+  }
+}

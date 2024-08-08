@@ -1,0 +1,119 @@
+{
+  "profile": {
+    "accountID": "Master",
+    "adminID": 0,
+    "user_name": "Master",
+    "auth_ID": 0,
+    "auth_name": "Master",
+    "auth_admin": true,
+    "auth_user": true,
+    "auth_team": true,
+    "auth_project": true,
+    "auth_customblock": true,
+    "auth_company": true,
+    "auth_part": true,
+    "auth_order": true,
+    "auth_contact": true
+  },
+  "admin": [
+    {
+      "auth_ID": 0,
+      "auth_name": "Master",
+      "auth_admin": true,
+      "auth_user": true,
+      "auth_team": true,
+      "auth_project": true,
+      "auth_customblock": true,
+      "auth_part": true,
+      "auth_company": true,
+      "auth_order": true,
+      "auth_contact": true
+    },
+    {
+      "auth_ID": 1,
+      "auth_name": "개발자",
+      "auth_admin": false,
+      "auth_user": false,
+      "auth_team": true,
+      "auth_project": true,
+      "auth_customblock": true,
+      "auth_part": true,
+      "auth_company": false,
+      "auth_order": false,
+      "auth_contact": false
+    },
+    {
+      "auth_ID": 2,
+      "auth_name": "CS 관리자",
+      "auth_admin": false,
+      "auth_user": true,
+      "auth_team": false,
+      "auth_project": false,
+      "auth_customblock": true,
+      "auth_part": false,
+      "auth_company": false,
+      "auth_order": false,
+      "auth_contact": false
+    },
+    {
+      "auth_ID": 3,
+      "auth_name": "럭스로보",
+      "auth_admin": false,
+      "auth_user": false,
+      "auth_team": false,
+      "auth_project": true,
+      "auth_customblock": false,
+      "auth_part": false,
+      "auth_company": false,
+      "auth_order": false,
+      "auth_contact": false
+    },
+    {
+      "auth_ID": 4,
+      "auth_name": "테스트",
+      "auth_admin": false,
+      "auth_user": false,
+      "auth_team": false,
+      "auth_project": true,
+      "auth_customblock": false,
+      "auth_part": false,
+      "auth_company": false,
+      "auth_order": false,
+      "auth_contact": false
+    }
+  ],
+  "account": [
+    {
+      "adminID": 0,
+      "user_name": "Master",
+      "accountID": "Master",
+      "password": "master1234",
+      "authID": 0,
+      "auth_name": "Master"
+    },
+    {
+      "adminID": 1,
+      "user_name": "Luxrobo",
+      "accountID": "Luxrobo",
+      "password": "Luxrobo1234",
+      "authID": 1,
+      "auth_name": "개발자"
+    },
+    {
+      "adminID": 2,
+      "user_name": "럭스로보",
+      "accountID": "luxrobo123",
+      "password": "Luxrobo1234",
+      "authID": 2,
+      "auth_name": "CS 관리자"
+    },
+    {
+      "adminID": 3,
+      "accountID": "a",
+      "user_name": "a",
+      "password": "a",
+      "authID": null,
+      "auth_name": null
+    }
+  ]
+}

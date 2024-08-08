@@ -1,0 +1,134 @@
+{
+  "company": [
+    {
+      "companyID": 1,
+      "name": "NextPCB",
+      "number": "+86 123456789",
+      "image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/companies/Hansaemdigi.png",
+      "webpage": "https://www.nextpcb.com",
+      "e-mail": "hs@hsdst.com",
+      "price": {
+        "two_layer": "",
+        "four_layer": ""
+      },
+      "date": {
+        "two_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        },
+        "four_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        }
+      }
+    },
+    {
+      "companyID": 2,
+      "name": "한샘디지텍",
+      "number": "+82 032-581-5375",
+      "image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/companies/Hansaemdigi.png",
+      "webpage": "https://www.hsdgt.com/main/main.html",
+      "e-mail": "hs@hsdst.com",
+      "price": {
+        "two_layer": "",
+        "four_layer": ""
+      },
+      "date": {
+        "two_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        },
+        "four_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        }
+      }
+    },
+    {
+      "companyID": 3,
+      "name": "샘플피씨비1",
+      "number": "+82 070-8667-1080",
+      "image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/companies/Hansaemdigi.png",
+      "webpage": "https://www.samplepcb.co.kr",
+      "e-mail": "hs@hsdst.com",
+      "price": {
+        "two_layer": "",
+        "four_layer": ""
+      },
+      "date": {
+        "two_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        },
+        "four_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        }
+      }
+    },
+    {
+      "companyID": 5,
+      "name": "샘플피씨비3",
+      "number": "+82 070-8667-1080",
+      "image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/companies/Hansaemdigi.png",
+      "webpage": "https://www.samplepcb.co.kr",
+      "e-mail": "hs@hsdst.com",
+      "price": {
+        "two_layer": "",
+        "four_layer": ""
+      },
+      "date": {
+        "two_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        },
+        "four_layer": {
+          "10": "",
+          "50": "",
+          "100": "",
+          "over_100": ""
+        }
+      }
+    }
+  ],
+  "company_info": {
+    "companyID": 1,
+    "name": "한샘 디지텍",
+    "number": "+82 032-581-5375",
+    "image": "http://ec2-13-125-200-107.ap-northeast-2.compute.amazonaws.com:8000/companies/Hansaemdigi.png",
+    "webpage": "https://www.hsdgt.com/main/main.html",
+    "e-mail": "hs@hsdst.com",
+    "price": {
+      "two_layer": {
+        "10": "( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000 ",
+        "50": "(( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000) * 0.9 ",
+        "100": "(( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000 ) * 0.8",
+        "over_500": "(( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000 ) * 0.7"
+      },
+      "four_layer": {
+        "10": "( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000 ",
+        "50": "(( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000) * 0.9 ",
+        "100": "(( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000 ) * 0.8",
+        "over_500": "(( \"X\" + 20 ) x ( \"Y\" + 20 ) x 0.22 x (\"number\"-4)  + 85,000 ) * 0.7"
+      }
+    },
+    "date": {
+      "two_layer": { "10": "1~3", "50": "1~3", "100": "5~7", "over_100": "10~12" },
+      "four_layer": { "10": "1~3", "50": "1~3", "100": "5~7", "over_100": "10~12" }
+    }
+  }
+}

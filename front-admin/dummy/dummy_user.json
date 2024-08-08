@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "userID": 1,
+      "accountID": "Hgdong123",
+      "password": "4754",
+      "username": "홍길동1",
+      "nickname": "hong1",
+      "countrycode": "+86",
+      "email": "hong1@luxrobo.com",
+      "email_opt_in": true,
+      "phone_number": "010-5213-4754",
+      "phone_opt_in": true,
+      "profile_image": "",
+      "created_at": "23.07.01",
+      "last_login_at": 1699932029
+    },
+    {
+      "userID": 2,
+      "accountID": "Test",
+      "password": "1234",
+      "username": "테스트",
+      "nickname": "test",
+      "countrycode": "",
+      "email": "tes1@luxrobo.com",
+      "email_opt_in": true,
+      "phone_number": "010-3123-2134",
+      "phone_opt_in": true,
+      "profile_image": "",
+      "created_at": "23.07.01",
+      "last_login_at": 1699932029
+    },
+    {
+      "userID": 3,
+      "accountID": "Hgdong456",
+      "password": "1234",
+      "username": "홍길동",
+      "nickname": "nick",
+      "countrycode": "",
+      "email": "hong111@luxrobo.com",
+      "email_opt_in": true,
+      "phone_number": "010-5213-2135",
+      "phone_opt_in": true,
+      "profile_image": "",
+      "created_at": "23.07.01",
+      "last_login_at": 1699932029
+    },
+    {
+      "userID": 4,
+      "accountID": "Luxrobo",
+      "password": "1234",
+      "username": "럭스로보",
+      "nickname": "luxlobo",
+      "countrycode": "",
+      "email": "luxlobo@luxrobo.com",
+      "email_opt_in": true,
+      "phone_number": "010-7168-1684",
+      "phone_opt_in": true,
+      "profile_image": "",
+      "created_at": "23.07.01",
+      "last_login_at": 1699932029
+    },
+    {
+      "userID": 5,
+      "accountID": "frigatebird",
+      "password": "1234",
+      "username": "프리것버드",
+      "nickname": "fgb",
+      "countrycode": "",
+      "email": "frigatebird@luxrobo.com",
+      "email_opt_in": true,
+      "phone_number": "010-7168-1684",
+      "phone_opt_in": true,
+      "profile_image": "",
+      "created_at": "23.07.01",
+      "last_login_at": 1699932029
+    }
+  ],
+  "users_info": {
+    "userID": 1,
+    "accountID": "Hgdong123",
+    "password": "4754",
+    "username": "홍길동1",
+    "nickname": "hong1",
+    "countrycode": "+86",
+    "email": "hong1@luxrobo.com",
+    "email_opt_in": true,
+    "phone_number": "010-5213-4754",
+    "phone_opt_in": true,
+    "profile_image": "",
+    "created_at": "23.07.01",
+    "last_login_at": 1699932029
+  },
+  "users_address": [
+    {
+      "addressID": 1,
+      "address_name": "드림플러스",
+      "address_json_string": "13층(서울특별시 서초구 강남대로 311 (서초동, 한화생명보험빌딩))",
+      "is_default": false,
+      "phone_number": "010-5213-2135",
+      "postal_code": "06628",
+      "receiver": "홍길동"
+    },
+    {
+      "addressID": 2,
+      "address_name": "테스트",
+      "address_json_string": "13층(서울특별시 서초구 강남대로 311 (서초동, 한화생명보험빌딩))",
+      "is_default": false,
+      "phone_number": "010-5213-2135",
+      "postal_code": "06628",
+      "receiver": "홍길동"
+    }
+  ],
+  "users_credit": [
+    {
+      "creditID": 1,
+      "credit_name": "UserCard1",
+      "crdeit_number": "**** 1720"
+    },
+    {
+      "creditID": 2,
+      "credit_name": "VISA CARD",
+      "crdeit_number": "**** 9420"
+    }
+  ],
+  "users_project": [
+    {
+      "created_at": "string",
+      "owner": "string",
+      "projectID": 0,
+      "project_image": "string",
+      "teamID": 0,
+      "title": "string",
+      "updated_at": "string",
+      "userID": 0
+    }
+  ],
+  "users_customblock": [
+    {
+      "customblockID": 0,
+      "name": "string",
+      "updated_at": "string",
+      "teamID": 0,
+      "userID": 0,
+      "partID": 0,
+      "color": "string",
+      "specification": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      },
+      "type": "string"
+    }
+  ],
+  "users_team": [
+    {
+      "countrycode": "string",
+      "email": "string",
+      "email_opt_in": true,
+      "phone_number": "string",
+      "phone_opt_in": true,
+      "role": 0,
+      "teamID": 0,
+      "team_image": "string",
+      "team_name": "string"
+    }
+  ]
+}

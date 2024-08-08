@@ -1,0 +1,46 @@
+@import "../../styles/scss/globals/globals.scss";
+
+//--------------------------------------------------------------
+.tableHeader {
+  margin-right: 15%;
+  margin-bottom: 50px;
+}
+//--------------------------------------------------------------
+.tableTopButton {
+  width: 100%;
+  position: relative;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+//--------------------------------------------------------------
+.tablePagination {
+  display: none !important;
+}
+//--------------------------------------------------------------
+.tableBottomButton {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+
+  &:has(.bottomButton) {
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  &:not(:has(.bottomButton)) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  & > .bottomButton {
+    display: flex;
+
+    & > button {
+      margin-left: 10px;
+    }
+  }
+}
+//--------------------------------------------------------------

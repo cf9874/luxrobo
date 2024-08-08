@@ -1,0 +1,100 @@
+.pagination_global {
+  display: block;
+  margin: 0;
+  padding: 0;
+  //
+  color: $black_1;
+  font-size: 14px;
+  //
+  box-sizing: border-box;
+
+  // 화살표
+  & > li:first-child {
+    display: inline-block;
+    min-width: 32px;
+    height: 32px;
+    margin-inline-end: 8px;
+    //
+    color: $black_1;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    //
+    border-radius: 6px;
+
+    &[aria-disabled="false"] {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $lightBlue_3;
+      }
+    }
+    &[aria-disabled="true"] {
+      cursor: not-allowed;
+    }
+  }
+
+  & > li:last-child {
+    display: inline-block;
+    min-width: 32px;
+    height: 32px;
+    //
+    color: $black_1;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    //
+    border-radius: 6px;
+
+    &[aria-disabled="false"] {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $lightBlue_3;
+      }
+    }
+    &[aria-disabled="true"] {
+      cursor: not-allowed;
+    }
+    //background-color: aqua;
+  }
+
+  // pagination
+  & > li:not(:first-child):not(:last-child) {
+    display: inline-block;
+    min-width: 32px;
+    height: 32px;
+    margin-inline-end: 8px;
+    //
+    color: $black_1;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    //
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightBlue_3;
+    }
+
+    &[class~="ant-pagination-item-active"] {
+      font-weight: 600;
+      background-color: white;
+      border-color: $lightBlue_1;
+      & > a {
+        color: $lightBlue_1;
+      }
+
+      &:hover {
+        background-color: $lightBlue_1;
+        & > a {
+          color: white;
+        }
+      }
+    }
+  }
+}

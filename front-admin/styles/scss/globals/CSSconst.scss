@@ -1,0 +1,39 @@
+// [const]
+$gapPixel: 5px;
+
+// (layout)
+// $pageMinWidth: 1300px;
+// $pageMinHeight: 780px;
+
+$headerHeight: 80px;
+$siderWidth: 250px;
+$profileWidth: 40px;
+$footerHeight: 105px;
+//
+$contentDivMaxWidth: calc(100vw - $siderWidth - 2 * $gapPixel);
+$contentDivNoFooterMaxHeight: calc(100vh - $headerHeight - 2 * $gapPixel);
+$contentDivHasFooterMaxHeight: calc(100vh - $headerHeight - 2 * $gapPixel - $footerHeight);
+
+// [color]
+$random_color: rgb(random(255), random(255), random(255));
+
+$general_basic_sub: #1b3852;
+
+$white_basic: #ffffff;
+$white_1: #e6f4ff;
+
+$gray_1: #d9d9d9;
+$gray_2: #cccccc;
+
+$lightBlue_1: #45d6df;
+$lightBlue_2: #eaf5f8;
+$lightBlue_3: #e6feff;
+$lightBlue_4: #bafdff;
+$lightBlue_5: #2d8a91d7;
+$lightBlue_6: #bfc8ca;
+
+$black_basic: #000000;
+$black_1: rgba(0, 0, 0, 0.88);
+
+$shadow_1: rgba(0, 0, 0, 0.02);
+$shadow_2: rgba(0, 0, 0, 0.18);

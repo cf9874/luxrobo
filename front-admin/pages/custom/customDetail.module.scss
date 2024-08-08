@@ -1,0 +1,58 @@
+@import "../../styles/scss/globals/globals.scss";
+
+.descB_rawData_wrapper {
+  position: relative;
+  .descB_rawData_formCheck_wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    .descB_rawData_formCheck {
+      font-size: 20px;
+    }
+    .descB_rawData_formCheck_true {
+      color: green;
+    }
+    .descB_rawData_formCheck_false {
+      color: red;
+    }
+  }
+}
+
+.customblock_descC_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  .customblock_descC_title_version_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .customblock_descC_title_version_text {
+      display: inline-flex;
+
+      & > div {
+        white-space: nowrap;
+      }
+
+      .customblock_descC_title_version_text_update {
+        margin-inline: 5px 10px;
+      }
+    }
+
+    .customblock_descC_title_version {
+      min-width: 100px;
+    }
+  }
+}
+
+.customblock_desc_file_btn_wrapper {
+  width: 100%;
+  .customblock_desc_file_btn {
+    width: 100%;
+  }
+}

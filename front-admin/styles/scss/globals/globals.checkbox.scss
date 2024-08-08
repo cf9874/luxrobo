@@ -1,0 +1,77 @@
+.checkbox_global {
+  display: inline-flex;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  //
+  box-sizing: border-box;
+  cursor: pointer;
+  //background-color: aqua;
+  &[class~="ant-checkbox-wrapper-disabled"] {
+    cursor: not-allowed;
+  }
+
+  &:not([class~="ant-checkbox-wrapper-disabled"]):hover {
+    & > span:not([class~="ant-checkbox-checked"]) > span[class="ant-checkbox-inner"] {
+      border-color: $lightBlue_1 !important;
+    }
+
+    & > span[class~="ant-checkbox-checked"] > span[class="ant-checkbox-inner"] {
+      background-color: $lightBlue_5 !important;
+      border-color: $lightBlue_5 !important;
+    }
+  }
+
+  //------------------------------------------------------------------------
+  & > span[class="ant-checkbox-inner"] {
+    position: relative;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    //
+    color: $black_1;
+    font-size: 14px;
+  }
+
+  // not-checked
+  & > span:not([class~="ant-checkbox-checked"]) > span[class="ant-checkbox-inner"] {
+    display: block !important;
+    position: relative !important;
+    top: 0 !important;
+    inset-inline-start: 0 !important;
+    width: 16px !important;
+    height: 16px !important;
+    //
+    background-color: white !important;
+    box-sizing: border-box !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 4px !important;
+  }
+
+  // not-checked
+  & > span:not([class~="ant-checkbox-checked"])[class~="ant-checkbox-disabled"] > span[class="ant-checkbox-inner"] {
+    display: block !important;
+    position: relative !important;
+    top: 0 !important;
+    inset-inline-start: 0 !important;
+    width: 16px !important;
+    height: 16px !important;
+    //
+    background-color: lightgray !important;
+    box-sizing: border-box !important;
+    border: 1px solid lightgray !important;
+    border-radius: 4px !important;
+  }
+
+  // checked 상태
+  & > span[class~="ant-checkbox-checked"] > span[class="ant-checkbox-inner"] {
+    background-color: $lightBlue_1;
+    border-color: $lightBlue_1;
+  }
+
+  // checked 상태 - disabled
+  & > span[class~="ant-checkbox-checked"][class~="ant-checkbox-disabled"] > span[class="ant-checkbox-inner"] {
+    background-color: lightgray;
+    border-color: lightgray;
+  }
+}
